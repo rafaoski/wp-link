@@ -1,0 +1,942 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2017-08-16 19:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION"
+
+#: 404.php:5
+msgid "Error 404 No specified page !!!"
+msgstr ""
+
+#: 404.php:24
+msgid "Maybe Here Something You Will Find:"
+msgstr ""
+
+#: 404.php:28
+msgid "Or look in the Pages Archives:"
+msgstr ""
+
+#: 404.php:31 archive.php:19
+msgid "Select Day"
+msgstr ""
+
+#: 404.php:36 archive.php:24
+msgid "Select Month"
+msgstr ""
+
+#: 404.php:41 archive.php:29
+msgid "Select Year"
+msgstr ""
+
+#: archive.php:43 category.php:41 index.php:46 search.php:31 tag.php:28
+msgid "&larr; Previous"
+msgstr ""
+
+#: archive.php:44 category.php:42 index.php:47 page.php:33 search.php:32
+#: tag.php:29
+msgid "Next &rarr;"
+msgstr ""
+
+#: archive.php:49 category.php:47 index.php:52 tag.php:34
+msgid "Sorry, no posts matched the criteria."
+msgstr ""
+
+#: category.php:9 single.php:8
+msgid "All Posts"
+msgstr ""
+
+#: comments.php:10
+#, php-format
+msgctxt "comments title"
+msgid "One thought on \"%2$s\""
+msgid_plural "%1$s thoughts on \"%2$s\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:30
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:31
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:32
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: functions.php:124
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:126
+msgid "Add widgets here."
+msgstr ""
+
+#: header.php:24 searchform.php:4
+msgid "Search …"
+msgstr ""
+
+#: header.php:26 searchform.php:6
+msgid "Search for:"
+msgstr ""
+
+#: header.php:37 inc/kirki-project/controls/menu.php:28
+msgid "fa-facebook"
+msgstr ""
+
+#: header.php:41 inc/kirki-project/controls/menu.php:32
+msgid "fa-twitter"
+msgstr ""
+
+#: header.php:45 inc/kirki-project/controls/menu.php:36
+msgid "fa-dribbble"
+msgstr ""
+
+#: header.php:49 inc/kirki-project/controls/menu.php:40
+msgid "fa-envelope"
+msgstr ""
+
+#: index.php:10 page.php:6 single-link_port.php:26 template-about.php:30
+#: template-portfolio.php:33 template-services.php:23
+msgid "Home"
+msgstr ""
+
+#: page.php:32
+msgid "&larr; Previos"
+msgstr ""
+
+#: search.php:20
+msgid "Amount of Items Found: "
+msgstr ""
+
+#: search.php:37
+msgid "No Word Search: "
+msgstr ""
+
+#: search.php:38
+msgid "Search Again: "
+msgstr ""
+
+#: single.php:45
+msgid "&larr; Poprzedni"
+msgstr ""
+
+#: single.php:46
+msgid "Następny &rarr;"
+msgstr ""
+
+#. Name of the template
+msgid "Link About"
+msgstr ""
+
+#: template-about.php:132
+msgid "Download PDF"
+msgstr ""
+
+#: template-about.php:184
+msgid "ADD IMAGE"
+msgstr ""
+
+#. Name of the template
+msgid "Front Page"
+msgstr ""
+
+#: template-front.php:88
+msgid "No Portfolio Found"
+msgstr ""
+
+#: template-front.php:140
+msgid "Recent Posts"
+msgstr ""
+
+#: template-front.php:143
+msgid "latests thoughts about things that only matters to us."
+msgstr ""
+
+#: template-front.php:148
+msgid "Show All Posts"
+msgstr ""
+
+#. Name of the template
+msgid "Link Portfolio"
+msgstr ""
+
+#: template-portfolio.php:100
+msgid "No Post Found"
+msgstr ""
+
+#. Name of the template
+msgid "Link Services"
+msgstr ""
+
+#: inc/cpt.php:6
+msgctxt "Post Type General Name"
+msgid "Portfolios"
+msgstr ""
+
+#: inc/cpt.php:7
+msgctxt "Post Type Singular Name"
+msgid "Portfolio"
+msgstr ""
+
+#: inc/cpt.php:8 inc/cpt.php:9 inc/cpt.php:36
+msgid "Portfolio"
+msgstr ""
+
+#: inc/cpt.php:10
+msgid "Portfolio Archives"
+msgstr ""
+
+#: inc/cpt.php:11
+msgid "Portfolio Attributes"
+msgstr ""
+
+#: inc/cpt.php:12
+msgid "Parent Portfolio:"
+msgstr ""
+
+#: inc/cpt.php:13
+msgid "All Portfolio"
+msgstr ""
+
+#: inc/cpt.php:14 inc/cpt.php:15
+msgid "Add New Portfolio"
+msgstr ""
+
+#: inc/cpt.php:16
+msgid "New Portfolio"
+msgstr ""
+
+#: inc/cpt.php:17
+msgid "Edit Portfolio"
+msgstr ""
+
+#: inc/cpt.php:18
+msgid "Update Portfolio"
+msgstr ""
+
+#: inc/cpt.php:19
+msgid "View Portfolio"
+msgstr ""
+
+#: inc/cpt.php:20
+msgid "View Portfolios"
+msgstr ""
+
+#: inc/cpt.php:21
+msgid "Search Portfolios"
+msgstr ""
+
+#: inc/cpt.php:22
+msgid "Not found"
+msgstr ""
+
+#: inc/cpt.php:23
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/cpt.php:24
+msgid "Featured Image"
+msgstr ""
+
+#: inc/cpt.php:25
+msgid "Set featured image"
+msgstr ""
+
+#: inc/cpt.php:26
+msgid "Remove featured image"
+msgstr ""
+
+#: inc/cpt.php:27
+msgid "Use as featured image"
+msgstr ""
+
+#: inc/cpt.php:28
+msgid "Insert into Portfolio"
+msgstr ""
+
+#: inc/cpt.php:29
+msgid "Uploaded to this item"
+msgstr ""
+
+#: inc/cpt.php:30
+msgid "Portfolios list"
+msgstr ""
+
+#: inc/cpt.php:31
+msgid "Portfolios list navigation"
+msgstr ""
+
+#: inc/cpt.php:32
+msgid "Filter Portfolios list"
+msgstr ""
+
+#: inc/cpt.php:37
+msgid "Post Type Description"
+msgstr ""
+
+#: inc/cust-func.php:18
+msgid "« Prev"
+msgstr ""
+
+#: inc/cust-func.php:19
+msgid "Next »"
+msgstr ""
+
+#: inc/cust-func.php:39
+msgid "Read More"
+msgstr ""
+
+#: inc/cust-func.php:54 inc/cmb2-project/about.php:155
+msgid "Name"
+msgstr ""
+
+#: inc/cust-func.php:56
+msgid "Email"
+msgstr ""
+
+#: inc/cust-func.php:58
+msgid "Website"
+msgstr ""
+
+#: inc/cust-func.php:69
+msgid "Comment"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:52
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:55
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:62
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:72
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:89
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: template-parts/content-archive.php:3
+msgid "Entry Name:"
+msgstr ""
+
+#: template-parts/content-archive.php:8
+msgid "Added: "
+msgstr ""
+
+#: template-parts/content-category.php:8 template-parts/content-single.php:6
+#: template-parts/content-tag.php:7 template-parts/content.php:8
+msgid "Added"
+msgstr ""
+
+#: template-parts/content-category.php:14 template-parts/content.php:14
+msgid "Posted on"
+msgstr ""
+
+#: template-parts/content-category.php:20 template-parts/content-single.php:18
+#: template-parts/content-tag.php:19 template-parts/content.php:20
+msgid "Categories: "
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-single.php:12
+msgid "Posted on: "
+msgstr ""
+
+#: inc/cmb2-project/about.php:10 inc/cmb2-project/portfolio.php:88
+msgid "Edit Options Page"
+msgstr ""
+
+#: inc/cmb2-project/about.php:20
+msgid "Add Heading Text 1"
+msgstr ""
+
+#: inc/cmb2-project/about.php:26
+msgid "Add Heading Text 2"
+msgstr ""
+
+#: inc/cmb2-project/about.php:32 inc/cmb2-project/services.php:85
+msgid "Upload File"
+msgstr ""
+
+#: inc/cmb2-project/about.php:33 inc/cmb2-project/services.php:86
+msgid "Upload an image or enter an URL."
+msgstr ""
+
+#: inc/cmb2-project/about.php:39 inc/cmb2-project/about.php:74
+#: inc/cmb2-project/about.php:89 inc/cmb2-project/about.php:102
+#: inc/cmb2-project/portfolio.php:53
+msgid "Add Heading"
+msgstr ""
+
+#: inc/cmb2-project/about.php:45 inc/cmb2-project/about.php:94
+#: inc/cmb2-project/about.php:108
+msgid "Add Content"
+msgstr ""
+
+#: inc/cmb2-project/about.php:54 inc/cmb2-project/front.php:36
+#: inc/cmb2-project/services.php:95
+msgid "Add Some Panels"
+msgstr ""
+
+#: inc/cmb2-project/about.php:67
+msgid "Add icon"
+msgstr ""
+
+#: inc/cmb2-project/about.php:81 inc/cmb2-project/about.php:169
+#: inc/kirki-project/controls/footer-social.php:75
+msgid "Description"
+msgstr ""
+
+#: inc/cmb2-project/about.php:82 inc/cmb2-project/about.php:170
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: inc/cmb2-project/about.php:115
+msgid "Add Info Pdf"
+msgstr ""
+
+#: inc/cmb2-project/about.php:135
+msgid "Your Team"
+msgstr ""
+
+#: inc/cmb2-project/about.php:162
+msgid "Function"
+msgstr ""
+
+#: inc/cmb2-project/about.php:176
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/cmb2-project/about.php:183
+msgid "Twitter URL"
+msgstr ""
+
+#: inc/cmb2-project/about.php:190
+msgid "Adress E-Mail"
+msgstr ""
+
+#: inc/cmb2-project/front.php:10 inc/cmb2-project/portfolio.php:10
+#: inc/cmb2-project/services.php:10
+msgid "Edit Options"
+msgstr ""
+
+#: inc/cmb2-project/front.php:20
+msgid "Add Link Text"
+msgstr ""
+
+#: inc/cmb2-project/front.php:26
+msgid "Add Link URL"
+msgstr ""
+
+#: inc/cmb2-project/front.php:39 inc/cmb2-project/services.php:62
+#: inc/cmb2-project/services.php:98
+msgid "Entry {#}"
+msgstr ""
+
+#: inc/cmb2-project/front.php:40 inc/cmb2-project/services.php:63
+#: inc/cmb2-project/services.php:99
+msgid "Add Another Entry"
+msgstr ""
+
+#: inc/cmb2-project/front.php:41 inc/cmb2-project/services.php:64
+#: inc/cmb2-project/services.php:100
+msgid "Remove Entry"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:18 inc/cmb2-project/portfolio.php:97
+msgid "Add Subtittle"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:25
+msgid "Add Img"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:31
+msgid "Text Left"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:39
+msgid "Text Right"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:47
+msgid "Add Next Img"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:60
+msgid "Add Gallery Images"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:68
+msgid "Add Images"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:104
+msgid "Text Top"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:111
+msgid "Text Bottom"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:119
+msgid "Add Url Button"
+msgstr ""
+
+#: inc/cmb2-project/portfolio.php:126
+msgid "Add Text Button"
+msgstr ""
+
+#: inc/cmb2-project/services.php:20
+msgid "Add Subtitule 1 Text"
+msgstr ""
+
+#: inc/cmb2-project/services.php:26
+msgid "Add Subtitule 2 Text"
+msgstr ""
+
+#: inc/cmb2-project/services.php:32
+msgid "Add Process Text"
+msgstr ""
+
+#: inc/cmb2-project/services.php:59
+msgid "Add Some Process"
+msgstr ""
+
+#: inc/kirki-project/kirki-panels.php:4
+msgid "Options Footer"
+msgstr ""
+
+#: inc/kirki-project/kirki-panels.php:5
+msgid "Change Footer Options"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:4
+msgid "Logos Bar Section"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:5
+msgid "Add Img Logos"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:13
+#: inc/kirki-project/controls/call-to-action.php:40
+msgid "Call To Action"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:22
+#: template-parts/footer-parts/part-connect.php:2
+#: inc/kirki-project/controls/stay-connected.php:20
+msgid "Stay Connected"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:32
+msgid "Add Social Profile"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:41
+msgid "Add Google Map"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:50
+msgid "Add Info Adress"
+msgstr ""
+
+#: inc/kirki-project/kirki-sections.php:59
+msgid "Menu Panel Options"
+msgstr ""
+
+#: template-parts/footer-parts/part-action.php:2
+#: inc/kirki-project/controls/call-to-action.php:21
+msgid "THIS IS A CALL TO ACTION AREA"
+msgstr ""
+
+#: template-parts/footer-parts/part-action.php:3
+#: inc/kirki-project/controls/call-to-action.php:30
+msgid ""
+"<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has "
+"roots in a piece of classical Latin literature from 45 BC, making it over "
+"2000 years old.</p>"
+msgstr ""
+
+#: template-parts/footer-parts/part-action.php:4
+msgid "Button Action"
+msgstr ""
+
+#: template-parts/footer-parts/part-connect.php:3
+#: inc/kirki-project/controls/stay-connected.php:29
+msgid ""
+"<p>Join us on our social networks for all the latest updates, "
+"product/service announcements and more.</p>"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:26
+#: inc/kirki-project/controls/footer-info.php:21
+msgid "Minsk - Head Office"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:27
+#: inc/kirki-project/controls/footer-info.php:30
+msgid "<p>Business Center, SomeAve 987,<br/>Minsk, Belarus.</p>"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:28
+#: inc/kirki-project/controls/footer-info.php:39
+msgid "+55 4839-4390"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:29
+#: inc/kirki-project/controls/footer-info.php:48
+msgid "+55 4333-4345"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:30
+#: inc/kirki-project/controls/footer-info.php:57
+msgid "hello@linkagency.com"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:31
+#: inc/kirki-project/controls/footer-info.php:66
+msgid ""
+"<p>The point of using Lorem Ipsum is that it has a more-or-less normal "
+"distribution of letters, as opposed to using 'Content here, content here', "
+"making it look like readable English.</p>"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:35
+msgid "ADDRESS"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:42
+msgid "P"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:43
+msgid "F"
+msgstr ""
+
+#: template-parts/footer-parts/part-contact.php:44
+msgid "E"
+msgstr ""
+
+#: template-parts/footer-parts/part-social.php:8
+#: inc/kirki-project/controls/footer-social.php:30
+msgid "FACEBOOK"
+msgstr ""
+
+#: template-parts/footer-parts/part-social.php:10
+#: inc/kirki-project/controls/footer-social.php:32
+msgid "Become A Friend"
+msgstr ""
+
+#: template-parts/footer-parts/part-social.php:14
+#: inc/kirki-project/controls/footer-social.php:36
+msgid "TWITTER"
+msgstr ""
+
+#: template-parts/footer-parts/part-social.php:16
+#: inc/kirki-project/controls/footer-social.php:38
+msgid "Follow Us"
+msgstr ""
+
+#: template-parts/footer-parts/part-social.php:21
+#: inc/kirki-project/controls/footer-social.php:43
+msgid "GOOGLE +"
+msgstr ""
+
+#: template-parts/footer-parts/part-social.php:23
+#: inc/kirki-project/controls/footer-social.php:45
+msgid "Add Us To Your Circle"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:6
+#: inc/kirki-project/controls/stay-connected.php:5
+msgid "On Off Call To Action"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:11
+#: inc/kirki-project/controls/footer-info.php:11
+#: inc/kirki-project/controls/footer-map.php:11
+#: inc/kirki-project/controls/footer-social.php:10
+#: inc/kirki-project/controls/logos-bar.php:11
+#: inc/kirki-project/controls/menu.php:11
+#: inc/kirki-project/controls/stay-connected.php:10
+msgid "Enable"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:12
+#: inc/kirki-project/controls/footer-info.php:12
+#: inc/kirki-project/controls/footer-map.php:12
+#: inc/kirki-project/controls/footer-social.php:11
+#: inc/kirki-project/controls/logos-bar.php:12
+#: inc/kirki-project/controls/menu.php:12
+#: inc/kirki-project/controls/stay-connected.php:11
+msgid "Disable"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:19
+msgid "Heading Action Text"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:28
+msgid "Add Some Action Content"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:38
+msgid "Button Text"
+msgstr ""
+
+#: inc/kirki-project/controls/call-to-action.php:47
+msgid "Button Url"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:6
+msgid "On Off Footer Info"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:19
+msgid "Add Adress Name"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:28
+msgid "Adress C.d"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:37
+msgid "Phone number_format_i18n"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:46
+msgid "Special Number"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:55
+msgid "Add E-Mail"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-info.php:64
+msgid "Add More Info"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-map.php:6
+msgid "On Off Google Map"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:5
+msgid "On Off Social Profile"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:18
+#: inc/kirki-project/controls/logos-bar.php:19
+msgid "Repeater Control"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:23
+#: inc/kirki-project/controls/logos-bar.php:24
+msgid "your custom value"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:54
+#: inc/kirki-project/controls/menu.php:48
+msgid "Add Font Awesome Icon"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:55
+msgid "Like -- fa-google-plus"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:61
+#: inc/kirki-project/controls/logos-bar.php:68
+msgid "Link Text"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:62
+#: inc/kirki-project/controls/logos-bar.php:69
+msgid "This will be the label for your link"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:68
+#: inc/kirki-project/controls/logos-bar.php:74
+#: inc/kirki-project/controls/menu.php:53
+msgid "Link URL"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:69
+#: inc/kirki-project/controls/logos-bar.php:75
+#: inc/kirki-project/controls/menu.php:54
+msgid "This will be the link URL"
+msgstr ""
+
+#: inc/kirki-project/controls/footer-social.php:76
+msgid "Add Some Description"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:6
+msgid "Add Blog Image"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:7
+msgid "Change Blog Image"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:8
+msgid "Simple Click :)."
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:17
+msgid "Add First Heading"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:19
+#: inc/kirki-project/controls/header-img.php:28
+msgid "This is a defualt value"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:26
+msgid "Add Some Descriptions"
+msgstr ""
+
+#: inc/kirki-project/controls/logos-bar.php:6
+msgid "On Off Logo"
+msgstr ""
+
+#: inc/kirki-project/controls/logos-bar.php:30
+msgid "Kirki Site"
+msgstr ""
+
+#: inc/kirki-project/controls/logos-bar.php:35
+#: inc/kirki-project/controls/logos-bar.php:41
+#: inc/kirki-project/controls/logos-bar.php:47
+#: inc/kirki-project/controls/logos-bar.php:53
+msgid "Kirki Repository"
+msgstr ""
+
+#: inc/kirki-project/controls/logos-bar.php:62
+msgid "This is the label"
+msgstr ""
+
+#: inc/kirki-project/controls/logos-bar.php:63
+msgid "This is the control description"
+msgstr ""
+
+#: inc/kirki-project/controls/menu.php:6
+msgid "On Off Social Info"
+msgstr ""
+
+#: inc/kirki-project/controls/menu.php:18
+msgid "Add Social Media"
+msgstr ""
+
+#: inc/kirki-project/controls/menu.php:23
+msgid "Change Social Adress"
+msgstr ""
+
+#: inc/kirki-project/controls/menu.php:47
+msgid "Add Icon"
+msgstr ""
+
+#: inc/kirki-project/controls/stay-connected.php:18
+msgid "Heading Connected Text"
+msgstr ""
+
+#: inc/kirki-project/controls/stay-connected.php:27
+msgid "Add Some Connected Content"
+msgstr ""
+
+#. Name of the theme
+msgid "Xtra-Link"
+msgstr ""
+
+#. Description of the theme
+msgid "Themes Based on Bootstrap Link"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author of the theme
+msgid "Rafał Olszewicz"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://xtra-strona.pl/"
+msgstr ""
