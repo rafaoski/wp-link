@@ -20,7 +20,9 @@
   <p class="lead"> <?php _e('Categories: ', 'xtra-link'); the_category( ', ' ); if(has_tag()) echo ' | ';  the_tags(); ?></p>
 
     <?php if ( has_post_thumbnail() ) { ?>
-	  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large',array('class'=>'center-block img-responsive img-post')); ?></a>
+	  <a href="<?php the_permalink(); ?>">
+    <img class='center-block img-responsive img-post' data-src="<?php the_post_thumbnail_url('large'); ?>" alt="post-<?=the_title();?>">  
+    </a>
 	  <br>
     <?php } else {
 // Obrazek Zastępczy z http://placehold.it

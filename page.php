@@ -3,7 +3,11 @@
 	<!-- MAIN IMAGE SECTION -->
 <div id="headerimg-page" class="parallax-page">
   <br />
-    <h1><a class="text-uppercase" href='<?php echo get_home_url(); ?>'><?= __('Home', 'xtra-link');?></a>
+    <h1>
+      <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+        <i class="fa fa-reply-all" aria-hidden="true"></i>
+          <?= __('Home', 'xtra-link');?>
+        </a>
         <span class="text-uppercase text-danger "> / <?php the_title();?></span>
     </h1>
 </div><!-- /#headerimg-page -->
@@ -12,7 +16,7 @@
 <div class="container">
 
 <div class="row">
- <br />       
+ <br />
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
         <!-- Blog Entries Column -->
         <div class="col-md-8">
@@ -52,5 +56,5 @@
     </div><!-- /.row -->
 
  </div><!-- /.container -->
- 
+
 <?php get_footer(); ?>

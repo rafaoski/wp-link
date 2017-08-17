@@ -162,6 +162,7 @@ wp_enqueue_script( 'masonry-js', get_template_directory_uri() . '/assets/js/maso
 wp_enqueue_script( 'imagesloaded-js', get_template_directory_uri() . '/assets/js/imagesloaded.js', array('jquery'), '1.5.0', true );
 wp_enqueue_script( 'classie-js', get_template_directory_uri() . '/assets/js/classie.js', array('jquery'), '1.6.0', true );
 wp_enqueue_script( 'AnimOnScroll-js', get_template_directory_uri() . '/assets/js/AnimOnScroll.js', array('jquery'), '1.7.0', true );
+wp_enqueue_script( 'Jquery-Lazy-Load-js', get_template_directory_uri() . '/assets/js/jquery.lazyloadxt.min.js', array('jquery'), '1.8.0', true );
 
 
 

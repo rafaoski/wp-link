@@ -5,11 +5,12 @@
   <br />
     <h1>
         <a class="text-uppercase" href='<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>'>
+          <i class="fa fa-reply-all" aria-hidden="true"></i>
             <?= __('All Posts', 'xtra-link');?>
         </a>
         <span class="text-uppercase text-danger "> / <?php the_title();?></span>
     </h1>
- 
+
 </div><!-- /#s-post -->
 
 <br/>
@@ -61,7 +62,7 @@
                  <?php get_sidebar(); ?>
         </div>
     <?php } ?>
-        
+
     </div><!-- /.row -->
  </div><!-- /.container -->
 <?php get_footer(); ?>

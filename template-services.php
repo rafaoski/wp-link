@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header();
 /*
 Template Name: Link Services
 */
@@ -20,11 +20,15 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 	<div id="serviceswrap" class="parallax-services">
 		<div class="container">
 
-	<h1><a class="text-uppercase" href='<?php echo get_home_url(); ?>'><?= __('Home', 'xtra-link');?></a>
+	<h1>
+    <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+      <i class="fa fa-reply-all" aria-hidden="true"></i>
+      <?= __('Home', 'xtra-link');?>
+    </a>
 	     <span class="text-uppercase text-danger "> / <?php the_title();?></span>
     </h1>
        <hr />
-	   
+
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 service-cont">
 					<h2 class='<?php echo get_the_content() ? 'marg-top' : '';?>'><?=$service_1;?><br/>
@@ -69,19 +73,19 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 				<h3><b><?=$heading;?></b></h3>
 				<p><?=$content;?></p>
 				<br>
-			</div>	
+			</div>
 
 			<div class='col-lg-4'>
 				<img class="img-responsive"  src="<?=$img;?>" alt="">
-			</div>	
+			</div>
 
 		</div>
 
 	</li>
 
 <?php } ?>
-  
-</ul>	  
+
+</ul>
 
 </div><!-- cont-proc mt -->
 
@@ -106,7 +110,7 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 
 		if ( isset( $entry['_services_description'] ) ) {
 			$description  = esc_html( $entry['_services_description'] );
-	} ?>			
+	} ?>
 					<!-- Srvice 1 -->
 				<div class="col-lg-1 centered">
 					<i class="fa <?=$icon;?>"></i>

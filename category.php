@@ -12,7 +12,7 @@
     </h1>
  
 </div><!-- /#s-post -->
-
+<br />
   <!-- Page Content -->
 <div class="container">
 

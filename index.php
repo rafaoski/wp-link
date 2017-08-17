@@ -7,14 +7,18 @@
 
   <div class="container">
 
-  <h1><a class="text-uppercase" href='<?php echo get_home_url(); ?>'><?= __('Home', 'xtra-link');?></a>
+  <h1>
+		<a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+			<i class="fa fa-reply-all" aria-hidden="true"></i>
+       <?= __('Home', 'xtra-link');?>
+	  </a>
 	     <span class="text-uppercase text-danger "> / <?= __('Blog', 'xtra-link'); ?></span>
   </h1>
   <hr />
 
        <h1><?= $txt_blog_1; ?></h1>
        <p><?= $txt_blog_2; ?></p>
-       
+
   </div><!-- /container -->
 
 <br>

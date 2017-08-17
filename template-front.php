@@ -134,21 +134,22 @@ $icon = $heading = $desc = '';
 
 
 <!-- BLOG POSTS -->
-<div class="container">
+<div class="container-fluid parallax-blog-page cont-recent-posts">
+
   <div class="row mt">
-    <div class="col-lg-12">
-      <h1><?= __('Recent Posts', 'xtra-link');?></h1>
+
+    <div class="col-lg-12 text-center">
+      <h3 class='recent-heading'><?= __('Recent Posts', 'xtra-link');?></h3>
     </div><!-- col-lg-12 -->
-    <div class="col-lg-8">
-      <p><?= __('latests thoughts about things that only matters to us.', 'xtra-link');?></p>
-    </div><!-- col-lg-8-->
-    <div class="col-lg-4 goright">
-      <p>
+
+    <div class="col-lg-4 pull-right">
+      <h1>
           <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
             <i class="fa fa-angle-right"></i> <?php _e('Show All Posts', 'xtra-link'); ?>
           </a>
-      </p>
+      </h1>
     </div>
+
   </div><!-- row -->
 
   <div class="row mt recent-posts">
@@ -170,8 +171,9 @@ if ( $query->have_posts() ) {
 
     <div class="col-lg-4">
       <a href='<?php the_permalink(); ?>'>
-       <img class="img-responsive center-block" src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+       <img class="img-responsive center-block" data-src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
      </a>
+
       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <?php the_excerpt(10); ?>
     </div>
@@ -186,7 +188,7 @@ wp_reset_postdata();
 ?>
 
   </div><!-- row -->
-</div><!-- container -->
+</div>
 
 <?php endwhile; ?>
 <?php get_footer(); ?>

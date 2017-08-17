@@ -30,13 +30,17 @@ $query = new WP_Query( $args );
 <div class="parallax-portfolio" id="portwrap">
   <div class="container">
 
-  <h1><a class="text-uppercase" href='<?php echo get_home_url(); ?>'><?= __('Home', 'xtra-link');?></a>
+  <h1>
+    <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+      <i class="fa fa-reply-all" aria-hidden="true"></i>
+      <?= __('Home', 'xtra-link');?>
+    </a>
 	     <span class="text-uppercase text-danger "> / <?php the_title();?></span>
   </h1>
   <hr />
 
     <div class="row">
-       <?php while ( have_posts() ) : the_post(); ?>  
+       <?php while ( have_posts() ) : the_post(); ?>
       <div class="col-lg-8 col-lg-offset-2 port-cont">
           <h2 class='<?php echo get_the_content() ? 'marg-top' : '';?>'>
             <?= $txt_p_1; ?>
@@ -67,7 +71,7 @@ $query = new WP_Query( $args );
             </a>
           </p>
       </div>
-<?php endif; ?>      
+<?php endif; ?>
     </div><!-- /row -->
   </div><!-- /.container -->
 

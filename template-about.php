@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header();
 /*
 Template Name: Link About
 */
@@ -27,7 +27,11 @@ $team_ab  = get_post_meta( get_the_ID(), '_ab_about_team', true );
 	<div id="aboutwrap" class="parallax-about">
 		<div class="container">
 
-    <h1><a class="text-uppercase" href='<?php echo get_home_url(); ?>'><?= __('Home', 'xtra-link');?></a>
+    <h1>
+      <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+        <i class="fa fa-reply-all" aria-hidden="true"></i>
+        <?= __('Home', 'xtra-link');?>
+      </a>
 	     <span class="text-uppercase text-danger "> / <?php the_title();?></span>
     </h1>
        <hr />
@@ -38,7 +42,7 @@ $team_ab  = get_post_meta( get_the_ID(), '_ab_about_team', true );
 						<?=$about_2 ? $about_2 : '';?>
                     </h2>
                     <?php the_content();?>
-                    
+
 				</div>
 			</div><!-- row -->
 		</div><!-- /container -->
@@ -53,7 +57,7 @@ $team_ab  = get_post_meta( get_the_ID(), '_ab_about_team', true );
 			  	<?= $about_3 ? "<img class='img-responsive' src='$about_3' alt='ab-3-img'>" : ''; ?>
 
 			  </div><!-- col-lg-8 -->
-			  
+
 			  <div class="col-lg-4">
 
 			  	<?= $about_4 ? "<h1>$about_4</h1>" : ''; ?>
@@ -101,8 +105,8 @@ $icon = $heading = $desc = '';
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!-- services section -->
-	
-	
+
+
 	<!-- TEAM INTRODUCTION -->
 	<div class="container">
 
@@ -128,17 +132,17 @@ $icon = $heading = $desc = '';
 			<?php if($ab_pdf) : ?>
 				<p class="tm">
 					<a href="<?=$ab_pdf;?>" download>
-						<i class="fa fa-link"></i> 
+						<i class="fa fa-link"></i>
 						<b><?php _e('Download PDF', 'xtra-link'); ?></b>
 					</a>
-				</p>	
+				</p>
 			<?php endif; ?>
 
 			</div>
 		</div>
-		
+
 	</div><!-- container -->
-	
+
 	<!-- TEAM MEMBERS -->
 	<div class="container">
 		<div class="row mt centered">
@@ -200,7 +204,7 @@ $img = $heading_1 = $heading_2 = $textarea = $twitter = $facebook = $e_mail = ''
 				     	<i class="fa fa-envelope"></i>
 					</a>
                  <?php endif; ?>
-				 
+
 				</p>
 
 			</div>

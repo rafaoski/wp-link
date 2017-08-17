@@ -1,4 +1,12 @@
 <?php get_header();?>
+
+<h3>Zobacz Popularne Tagi:</h3>
+
+<ul class='tag-cloud'>
+   <li><?php wp_tag_cloud(array('number' => 12, 'order' => 'RAND')); ?></li>
+</ul>
+
+
 <br>
 <!-- Page Content -->
 <div class="container">
