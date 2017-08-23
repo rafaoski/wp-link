@@ -120,6 +120,20 @@ margin-left: 40px;
   font-size: 4.5em;
 }
 
+.parallax-tag-page {
+  min-height: 150px;
+  height: 400px;
+  /*width: 100%;*/
+  background: rgba(5, 3, 15, 0.88);
+  text-align: center;
+}
+
+.parallax-tag-page h1 {
+  padding-top: 1.5em;
+  font-size: 4.5em;
+}
+
+
 .parallax-post {
   min-height: 150px;
   height: 400px;

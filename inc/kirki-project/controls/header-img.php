@@ -39,3 +39,14 @@ Kirki::add_field( 'my_config', array(
 	'default'     => '',
 	'priority'    => 50,
 ) );
+
+Kirki::add_field( 'my_config', array(
+	'type'        => 'image',
+	'settings'    => 'img_tag',
+	'label'       => __( 'Add Tag Image', 'xtra-link' ),
+	'description' => __( 'Change Tag Image', 'xtra-link' ),
+	'help'        => __( 'Simple Click :).', 'xtra-link' ),
+	'section'     => 'header_image',
+	'default'     => '',
+	'priority'    => 50,
+) );

@@ -12,6 +12,7 @@
 <?php wp_footer();
 $img_blog = get_theme_mod( 'img_blog', '' );
 $img_archive = get_theme_mod( 'img_archive', '' );
+$img_tag = get_theme_mod( 'img_tag', '' );
  // get_template_part( 'inc/old', 'footer-script'); ?>
 
 <script>
@@ -32,8 +33,9 @@ $img_archive = get_theme_mod( 'img_archive', '' );
 
 	 $('.parallax-blog-page').parallax({imageSrc: '<?php echo esc_url( $img_blog ); ?>'})
 
-   $('.parallax-archive-page').parallax({imageSrc: '<?php echo esc_url( $img_archive ); ?>'})
+   $('.parallax-tag-page').parallax({imageSrc: '<?php echo esc_url( $img_tag ); ?>'})
 
+   $('.parallax-archive-page').parallax({imageSrc: '<?php echo esc_url( $img_archive ); ?>'})
 
 
 $(document).ready(function(){

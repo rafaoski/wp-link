@@ -1,10 +1,24 @@
 <?php get_header();?>
 
-<h3>Zobacz Popularne Tagi:</h3>
+<!-- MAIN IMAGE SECTION -->
+<div id="headerimg-page" class="parallax-tag-page">
+<br />
+  <h1><a class="text-uppercase" href='<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>'>
+    <i class="fa fa-reply-all" aria-hidden="true"></i>
+    <?= __('Blog', 'xtra-link');?>
+  </a>
+      <span class="text-danger "> / <?php single_tag_title(); ?> </span>
+  </h1>
 
 <ul class='tag-cloud'>
    <li><?php wp_tag_cloud(array('number' => 12, 'order' => 'RAND')); ?></li>
 </ul>
+
+</div><!-- /#headerimg-page -->
+
+<br />
+
+
 
 
 <br>
