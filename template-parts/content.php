@@ -10,7 +10,7 @@
             <?php the_author(); ?>
           </a>
            |
-          <span class="glyphicon glyphicon-time"></span>
+           <i class="fa fa-calendar" aria-hidden="true"></i>
 		  <span class='posted-on'> <?php _e('Posted on', 'xtra-link'); ?> <?php the_time('j F, Y'); ?></span>
 
         </small>
