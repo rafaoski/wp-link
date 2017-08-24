@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2017-08-24 15:04+0000\n"
+"POT-Creation-Date: 2017-08-24 17:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-08-24 15:04+0000\n"
+"PO-Revision-Date: 2017-08-24 17:18+0000\n"
 "Last-Translator: rafaoski <rafalolszewicz@gmail.com>\n"
 "Language-Team: Polish\n"
 "X-Generator: Loco - https://localise.biz/\n"
@@ -22,6 +22,14 @@ msgstr ""
 #: template-portfolio.php:36 template-services.php:26
 msgid "Home"
 msgstr ""
+
+#: search.php:11
+msgid "Archive"
+msgstr "Archiwum"
+
+#: search.php:13
+msgid "Search"
+msgstr "Szukaj"
 
 #: single.php:46
 msgid "&larr; Poprzedni"
@@ -109,14 +117,6 @@ msgstr ""
 #: inc/kirki-project/controls/footer-info.php:57
 msgid "hello@linkagency.com"
 msgstr ""
-
-#: inc/polylang-translations.php:31
-msgid "Welcome To My Blog"
-msgstr ""
-
-#: inc/polylang-translations.php:32
-msgid "See My Latest Posts"
-msgstr "Zobacz Moje Najnowsze Wpisy"
 
 #. translators: %s: post author.
 #: inc/template-tags.php:35
@@ -367,15 +367,15 @@ msgstr ""
 msgid "E"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:24
+#: template-parts/footer-parts/part-social.php:23
 msgid "FACEBOOK"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:34
+#: template-parts/footer-parts/part-social.php:33
 msgid "TWITTER"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:44
+#: template-parts/footer-parts/part-social.php:43
 msgid "GOOGLE +"
 msgstr ""
 
@@ -483,6 +483,7 @@ msgstr ""
 #: inc/kirki-project/controls/header-img.php:8
 #: inc/kirki-project/controls/header-img.php:37
 #: inc/kirki-project/controls/header-img.php:48
+#: inc/kirki-project/controls/header-img.php:59
 msgid "Simple Click :)."
 msgstr ""
 
@@ -501,7 +502,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/header-img.php:35
 msgid "Add Archive Image"
-msgstr ""
+msgstr "Dodaj Obrazek Archiwum"
 
 #: inc/kirki-project/controls/header-img.php:36
 msgid "Change Archive Image"
@@ -509,10 +510,18 @@ msgstr ""
 
 #: inc/kirki-project/controls/header-img.php:46
 msgid "Add Tag Image"
-msgstr ""
+msgstr "Dodaj Obrazek Dla Tagów"
 
 #: inc/kirki-project/controls/header-img.php:47
 msgid "Change Tag Image"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:57
+msgid "Add Search Image"
+msgstr "Dodaj Obrazek Dla Wyszukiwania"
+
+#: inc/kirki-project/controls/header-img.php:58
+msgid "Change Search Image"
 msgstr ""
 
 #: inc/kirki-project/controls/logos-bar.php:6
@@ -541,7 +550,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/menu.php:18
 msgid "Add Social Media"
-msgstr ""
+msgstr "Dodaj Media Społecznościowe"
 
 #: inc/kirki-project/controls/menu.php:23
 msgid "Change Social Adress"
@@ -549,11 +558,11 @@ msgstr ""
 
 #: inc/kirki-project/controls/menu.php:47
 msgid "Add Icon"
-msgstr ""
+msgstr "Dodaj Ikonę"
 
 #: inc/kirki-project/controls/menu.php:48
 msgid "Add Font Awesome Icon"
-msgstr ""
+msgstr "Dodaj Ikonę Font Awesome"
 
 #: inc/kirki-project/controls/stay-connected.php:18
 msgid "Heading Connected Text"
@@ -561,7 +570,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/stay-connected.php:27
 msgid "Add Some Connected Content"
-msgstr ""
+msgstr "Dodaj kilka połączonych treści"
 
 #. Name of the theme
 msgid "Xtra-Link"
@@ -607,11 +616,11 @@ msgstr "Wybierz miesiąc"
 msgid "Select Year"
 msgstr "Wybierz rok"
 
-#: archive.php:56 category.php:41 index.php:58 search.php:31 tag.php:50
+#: archive.php:56 category.php:41 index.php:58 search.php:47 tag.php:50
 msgid "&larr; Previous"
 msgstr "&larr; Poprzednia"
 
-#: archive.php:57 category.php:42 index.php:59 page.php:37 search.php:32
+#: archive.php:57 category.php:42 index.php:59 page.php:37 search.php:48
 #: tag.php:51
 msgid "Next &rarr;"
 msgstr "Następna &rarr;"
@@ -689,15 +698,15 @@ msgstr "fa-envelope"
 msgid "&larr; Previos"
 msgstr "&larr; Poprzednia"
 
-#: search.php:20
+#: search.php:36
 msgid "Amount of Items Found: "
 msgstr "Ilość znalezionych elementów:"
 
-#: search.php:37
+#: search.php:53
 msgid "No Word Search: "
 msgstr "Brak wyszukiwania wyrazu:"
 
-#: search.php:38
+#: search.php:54
 msgid "Search Again: "
 msgstr "Poszukaj ponownie:"
 
@@ -721,11 +730,11 @@ msgstr "Strona Frontowa"
 msgid "No Portfolio Found"
 msgstr "Nie znaleziono żadnego Portfolio"
 
-#: template-front.php:142
+#: template-front.php:145
 msgid "Recent Posts"
 msgstr "Ostatnie Wpisy"
 
-#: template-front.php:148
+#: template-front.php:151
 msgid "Show All Posts"
 msgstr "Pokaż Wszystkie Wpisy"
 
@@ -868,6 +877,14 @@ msgstr ""
 "tutaj, zawartości tutaj\", co sprawia, że ​​wygląda jak czytelny angielski."
 "</p>"
 
+#: inc/polylang-translations.php:31
+msgid "Welcome To My Blog"
+msgstr "Witam Na Moim Blogu"
+
+#: inc/polylang-translations.php:32
+msgid "See My Latest Posts"
+msgstr "Zobacz Moje Najnowsze Wpisy"
+
 #. translators: %s: post date.
 #: inc/template-tags.php:29
 #, php-format
@@ -927,14 +944,14 @@ msgstr "Dodano:"
 msgid "Add Next Img"
 msgstr "Dodaj Następny Obrazek"
 
-#: template-parts/footer-parts/part-social.php:30
+#: template-parts/footer-parts/part-social.php:29
 msgid "Become A Friend"
 msgstr "Zostań Przyjacielem"
 
-#: template-parts/footer-parts/part-social.php:40
+#: template-parts/footer-parts/part-social.php:39
 msgid "Follow US"
 msgstr "Podążaj za Nami"
 
-#: template-parts/footer-parts/part-social.php:50
+#: template-parts/footer-parts/part-social.php:49
 msgid "Add Us To Your Circle"
 msgstr "Dodaj Nas Do Swojego Kręgu"

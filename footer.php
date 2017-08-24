@@ -18,6 +18,7 @@
 $img_blog = get_theme_mod( 'img_blog', '' );
 $img_archive = get_theme_mod( 'img_archive', '' );
 $img_tag = get_theme_mod( 'img_tag', '' );
+$img_search = get_theme_mod( 'img_search', '' );
  // get_template_part( 'inc/old', 'footer-script'); ?>
 
 <script>
@@ -53,14 +54,15 @@ $(document).ready(function () {
 
    $('.parallax-page').parallax({imageSrc: '<?php the_post_thumbnail_url(); ?>'})
 
-	 $('.parallax-post').parallax({imageSrc: '<?php the_post_thumbnail_url(); ?>'})
+   $('.parallax-post').parallax({imageSrc: '<?php the_post_thumbnail_url(); ?>'})
 
-	 $('.parallax-blog-page').parallax({imageSrc: '<?php echo esc_url( $img_blog ); ?>'})
+   $('.parallax-blog-page').parallax({imageSrc: '<?php echo esc_url( $img_blog ); ?>'})
 
    $('.parallax-tag-page').parallax({imageSrc: '<?php echo esc_url( $img_tag ); ?>'})
 
    $('.parallax-archive-page').parallax({imageSrc: '<?php echo esc_url( $img_archive ); ?>'})
 
+   $('.parallax-search-page').parallax({imageSrc: '<?php echo esc_url( $img_search ); ?>'})
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();

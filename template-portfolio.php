@@ -28,7 +28,7 @@ $query = new WP_Query( $args );
 ?>
 <!-- MAIN IMAGE SECTION -->
 <div class="parallax-portfolio" id="portwrap">
-  <div class="container">
+  <div class="container <?php if (function_exists('pll_the_languages')) { echo 'cont-page'; } ?>">
 
   <h1>
     <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>

@@ -74,7 +74,11 @@ transform: scale(0.9);
 .my-form {
   padding: 5px;
 }
-
+.my-form input {
+  background-color: #39413c80;
+  color: #09d7a8;
+  border: 1px solid #b292924d;
+}
 .logos-bar {
   display: flex;
   justify-content: center;
@@ -120,7 +124,8 @@ margin-left: 40px;
 .parallax-portfolio {
   min-height: 750px;
   /*width: 100%;*/
-  background: rgba(14, 19, 88, 0.68);
+  /* background: rgba(14, 19, 88, 0.68); */
+  background: rgba(8, 11, 42, 0.83);
 }
 
 .parallax-single-portfolio {
@@ -168,6 +173,19 @@ margin-left: 40px;
 .parallax-archive-page h1 {
   padding-top: 1.5em;
   font-size: 4.5em;
+}
+
+.parallax-search-page {
+  min-height: 150px;
+  height: 400px;
+  /*width: 100%;*/
+  background: rgba(5, 3, 15, 0.88);
+  text-align: center;
+}
+
+.parallax-search-page h1 {
+  padding-top: 2.5em;
+  font-size: 3em;
 }
 
 .parallax-tag-page {
@@ -390,33 +408,100 @@ transition: all .3s ease-in-out;
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1 {
+  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1, .parallax-search-page h1 {
     padding-top: 2.5em;
     font-size: 3em;
    }
+
+   .parallax-tag-page h1 {
+    padding-top: 2.5em;
+    font-size: 3em;
+   }
+
+
+   #headerwrap h1 {
+    font-size: 4.8em;
+    margin-top: 1.5em;
+  }
+  #headerwrap h2 {
+   font-size: 3.8em;
+  }
 
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1 {
+  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1, .parallax-search-page h1 {
     padding-top: 3em;
     font-size: 2.5em;
    }
+
+   .parallax-tag-page h1 {
+    padding-top: 3em;
+    font-size: 2.5em;
+   }
+
+   #headerwrap h1 {
+    font-size: 4.5em;
+    margin-top: 1.5em;
+  }
+  #headerwrap h2 {
+   font-size: 3.5em;
+  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1 {
+  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1, .parallax-search-page h1 {
     padding-top: 3.3em;
     font-size: 2em;
    }
+
+   .parallax-tag-page h1 {
+    padding-top: 3.3em;
+    font-size: 2em;
+   }
+
+   #headerwrap h1 {
+    font-size: 3.5em;
+    margin-top: 1.5em;
+  }
+  #headerwrap h2 {
+   font-size: 2.5em;
+  }
+
+  .parallax-single-portfolio h1 {
+    padding-top: 2.5em;
+    font-size: 2em;
+    text-align: center;
+   }
+
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1 {
+  .parallax-page h1, .parallax-archive-page h1, .parallax-post h1, .parallax-search-page h1 {
     padding-top: 4.5em;
     font-size: 1.5em;
    }
+
+   .parallax-tag-page h1 {
+    padding-top: 4.5em;
+    font-size: 1.5em;
+   }
+ 
+   #headerwrap h1 {
+     font-size: 2.5em;
+     margin-top: 2em;
+   }
+   #headerwrap h2 {
+    font-size: 1.8em;
+   }
+
+   .parallax-single-portfolio h1 {
+    padding-top: 3.5em;
+    font-size: 1.5em;
+    text-align: center;
+   }
+
 }

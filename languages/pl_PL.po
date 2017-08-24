@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2017-08-24 15:04+0000\n"
+"POT-Creation-Date: 2017-08-24 17:15+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-08-24 15:05+0000\n"
+"PO-Revision-Date: 2017-08-24 17:25+0000\n"
 "Last-Translator: rafaoski <rafalolszewicz@gmail.com>\n"
 "Language-Team: Polish\n"
 "X-Generator: Loco - https://localise.biz/\n"
@@ -22,6 +22,14 @@ msgstr ""
 #: template-portfolio.php:36 template-services.php:26
 msgid "Home"
 msgstr ""
+
+#: search.php:11
+msgid "Archive"
+msgstr "Archiwum"
+
+#: search.php:13
+msgid "Search"
+msgstr "Szukaj"
 
 #: single.php:46
 msgid "&larr; Poprzedni"
@@ -110,14 +118,6 @@ msgstr ""
 msgid "hello@linkagency.com"
 msgstr ""
 
-#: inc/polylang-translations.php:31
-msgid "Welcome To My Blog"
-msgstr "Witam Na Moim Blogu"
-
-#: inc/polylang-translations.php:32
-msgid "See My Latest Posts"
-msgstr "Zobacz Moje Najnowsze Wpisy"
-
 #. translators: %s: post author.
 #: inc/template-tags.php:35
 #, php-format
@@ -164,11 +164,11 @@ msgstr ""
 
 #: inc/cmb2-project/about.php:20
 msgid "Add Heading Text 1"
-msgstr ""
+msgstr "Dodaj Pierwszy Nagłówek"
 
 #: inc/cmb2-project/about.php:26
 msgid "Add Heading Text 2"
-msgstr ""
+msgstr "Dodaj Drugi Nagłówek"
 
 #: inc/cmb2-project/about.php:32 inc/cmb2-project/services.php:85
 msgid "Upload File"
@@ -182,21 +182,21 @@ msgstr ""
 #: inc/cmb2-project/about.php:89 inc/cmb2-project/about.php:102
 #: inc/cmb2-project/portfolio.php:53
 msgid "Add Heading"
-msgstr ""
+msgstr "Dodaj Nagłówek"
 
 #: inc/cmb2-project/about.php:45 inc/cmb2-project/about.php:94
 #: inc/cmb2-project/about.php:108
 msgid "Add Content"
-msgstr ""
+msgstr "Dodaj Kontent"
 
 #: inc/cmb2-project/about.php:54 inc/cmb2-project/front.php:36
 #: inc/cmb2-project/services.php:95
 msgid "Add Some Panels"
-msgstr ""
+msgstr "Dodaj Panel"
 
 #: inc/cmb2-project/about.php:67
 msgid "Add icon"
-msgstr ""
+msgstr "Dodaj Ikonę"
 
 #: inc/cmb2-project/about.php:81 inc/cmb2-project/about.php:169
 msgid "Description"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: inc/cmb2-project/about.php:115
 msgid "Add Info Pdf"
-msgstr ""
+msgstr "Dodaj Info PDF"
 
 #: inc/cmb2-project/about.php:135
 msgid "Your Team"
@@ -237,11 +237,11 @@ msgstr ""
 
 #: inc/cmb2-project/front.php:20
 msgid "Add Link Text"
-msgstr ""
+msgstr "Dodaj Tekst"
 
 #: inc/cmb2-project/front.php:26
 msgid "Add Link URL"
-msgstr ""
+msgstr "Dodaj Adres URL"
 
 #: inc/cmb2-project/front.php:39 inc/cmb2-project/services.php:62
 #: inc/cmb2-project/services.php:98
@@ -251,7 +251,7 @@ msgstr ""
 #: inc/cmb2-project/front.php:40 inc/cmb2-project/services.php:63
 #: inc/cmb2-project/services.php:99
 msgid "Add Another Entry"
-msgstr ""
+msgstr "Dodaj Następny"
 
 #: inc/cmb2-project/front.php:41 inc/cmb2-project/services.php:64
 #: inc/cmb2-project/services.php:100
@@ -260,11 +260,11 @@ msgstr ""
 
 #: inc/cmb2-project/portfolio.php:18 inc/cmb2-project/portfolio.php:97
 msgid "Add Subtittle"
-msgstr ""
+msgstr "Dodaj Subtytuł"
 
 #: inc/cmb2-project/portfolio.php:25
 msgid "Add Img"
-msgstr ""
+msgstr "Dodaj Obrazek"
 
 #: inc/cmb2-project/portfolio.php:31
 msgid "Text Left"
@@ -276,11 +276,11 @@ msgstr ""
 
 #: inc/cmb2-project/portfolio.php:60
 msgid "Add Gallery Images"
-msgstr ""
+msgstr "Dodaj Galerię Obrazków"
 
 #: inc/cmb2-project/portfolio.php:68
 msgid "Add Images"
-msgstr ""
+msgstr "Dodaj Obrazek"
 
 #: inc/cmb2-project/portfolio.php:104
 msgid "Text Top"
@@ -292,27 +292,27 @@ msgstr ""
 
 #: inc/cmb2-project/portfolio.php:119
 msgid "Add Url Button"
-msgstr ""
+msgstr "Dodaj URL Przycisku"
 
 #: inc/cmb2-project/portfolio.php:126
 msgid "Add Text Button"
-msgstr ""
+msgstr "Dodaj Tekst Przycisku"
 
 #: inc/cmb2-project/services.php:20
 msgid "Add Subtitule 1 Text"
-msgstr ""
+msgstr "Dodaj Subtytuł 1 Tekstu"
 
 #: inc/cmb2-project/services.php:26
 msgid "Add Subtitule 2 Text"
-msgstr ""
+msgstr "Dodaj Subtytuł 2 Tekstu"
 
 #: inc/cmb2-project/services.php:32
 msgid "Add Process Text"
-msgstr ""
+msgstr "Dodaj Tekst Procesu"
 
 #: inc/cmb2-project/services.php:59
 msgid "Add Some Process"
-msgstr ""
+msgstr "Dodaj Proces"
 
 #: inc/kirki-project/kirki-panels.php:4
 msgid "Options Footer"
@@ -328,7 +328,7 @@ msgstr ""
 
 #: inc/kirki-project/kirki-sections.php:5
 msgid "Add Img Logos"
-msgstr ""
+msgstr "Dodaj Obrazek Logos"
 
 #: inc/kirki-project/kirki-sections.php:13
 #: inc/kirki-project/controls/call-to-action.php:40
@@ -337,15 +337,15 @@ msgstr ""
 
 #: inc/kirki-project/kirki-sections.php:32
 msgid "Add Social Profile"
-msgstr ""
+msgstr "Dodaj Profil Społecznościowy"
 
 #: inc/kirki-project/kirki-sections.php:41
 msgid "Add Google Map"
-msgstr ""
+msgstr "Dodaj Mapę Google"
 
 #: inc/kirki-project/kirki-sections.php:50
 msgid "Add Info Adress"
-msgstr ""
+msgstr "Dodaj Info Twojego Adresu"
 
 #: inc/kirki-project/kirki-sections.php:59
 msgid "Menu Panel Options"
@@ -353,7 +353,7 @@ msgstr ""
 
 #: template-parts/footer-parts/part-contact.php:49
 msgid "ADDRESS"
-msgstr ""
+msgstr "Adres"
 
 #: template-parts/footer-parts/part-contact.php:56
 msgid "P"
@@ -367,15 +367,15 @@ msgstr ""
 msgid "E"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:24
+#: template-parts/footer-parts/part-social.php:23
 msgid "FACEBOOK"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:34
+#: template-parts/footer-parts/part-social.php:33
 msgid "TWITTER"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:44
+#: template-parts/footer-parts/part-social.php:43
 msgid "GOOGLE +"
 msgstr ""
 
@@ -410,7 +410,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/call-to-action.php:28
 msgid "Add Some Action Content"
-msgstr ""
+msgstr "Dodaj Akcję Kontentu"
 
 #: inc/kirki-project/controls/call-to-action.php:38
 msgid "Button Text"
@@ -426,7 +426,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/footer-info.php:19
 msgid "Add Adress Name"
-msgstr ""
+msgstr "Podaj Nazwę adresu"
 
 #: inc/kirki-project/controls/footer-info.php:28
 msgid "Adress C.d"
@@ -442,11 +442,11 @@ msgstr ""
 
 #: inc/kirki-project/controls/footer-info.php:55
 msgid "Add E-Mail"
-msgstr ""
+msgstr "Adres E-Mail"
 
 #: inc/kirki-project/controls/footer-info.php:64
 msgid "Add More Info"
-msgstr ""
+msgstr "Dodaj Więcej Info "
 
 #: inc/kirki-project/controls/footer-map.php:6
 msgid "On Off Google Map"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/header-img.php:6
 msgid "Add Blog Image"
-msgstr ""
+msgstr "Dodaj Obrazek Bloga"
 
 #: inc/kirki-project/controls/header-img.php:7
 msgid "Change Blog Image"
@@ -483,12 +483,13 @@ msgstr ""
 #: inc/kirki-project/controls/header-img.php:8
 #: inc/kirki-project/controls/header-img.php:37
 #: inc/kirki-project/controls/header-img.php:48
+#: inc/kirki-project/controls/header-img.php:59
 msgid "Simple Click :)."
 msgstr ""
 
 #: inc/kirki-project/controls/header-img.php:17
 msgid "Add Blog Heading"
-msgstr ""
+msgstr "Dodaj Nagłówek Bloga"
 
 #: inc/kirki-project/controls/header-img.php:19
 #: inc/kirki-project/controls/header-img.php:28
@@ -497,11 +498,11 @@ msgstr ""
 
 #: inc/kirki-project/controls/header-img.php:26
 msgid "Add Blog Descriptions"
-msgstr ""
+msgstr "Dodaj Opis Bloga"
 
 #: inc/kirki-project/controls/header-img.php:35
 msgid "Add Archive Image"
-msgstr ""
+msgstr "Dodaj Obrazek Archiwum"
 
 #: inc/kirki-project/controls/header-img.php:36
 msgid "Change Archive Image"
@@ -509,10 +510,18 @@ msgstr ""
 
 #: inc/kirki-project/controls/header-img.php:46
 msgid "Add Tag Image"
-msgstr ""
+msgstr "Dodaj Obrazek Dla Tagów"
 
 #: inc/kirki-project/controls/header-img.php:47
 msgid "Change Tag Image"
+msgstr ""
+
+#: inc/kirki-project/controls/header-img.php:57
+msgid "Add Search Image"
+msgstr "Dodaj Obrazek Dla Wyszukiwania"
+
+#: inc/kirki-project/controls/header-img.php:58
+msgid "Change Search Image"
 msgstr ""
 
 #: inc/kirki-project/controls/logos-bar.php:6
@@ -541,7 +550,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/menu.php:18
 msgid "Add Social Media"
-msgstr ""
+msgstr "Dodaj Media Społecznościowe"
 
 #: inc/kirki-project/controls/menu.php:23
 msgid "Change Social Adress"
@@ -549,11 +558,11 @@ msgstr ""
 
 #: inc/kirki-project/controls/menu.php:47
 msgid "Add Icon"
-msgstr ""
+msgstr "Dodaj Ikonę"
 
 #: inc/kirki-project/controls/menu.php:48
 msgid "Add Font Awesome Icon"
-msgstr ""
+msgstr "Dodaj Ikonę Font Awesome"
 
 #: inc/kirki-project/controls/stay-connected.php:18
 msgid "Heading Connected Text"
@@ -561,7 +570,7 @@ msgstr ""
 
 #: inc/kirki-project/controls/stay-connected.php:27
 msgid "Add Some Connected Content"
-msgstr ""
+msgstr "Dodaj kilka połączonych treści"
 
 #. Name of the theme
 msgid "Xtra-Link"
@@ -607,11 +616,11 @@ msgstr "Wybierz miesiąc"
 msgid "Select Year"
 msgstr "Wybierz rok"
 
-#: archive.php:56 category.php:41 index.php:58 search.php:31 tag.php:50
+#: archive.php:56 category.php:41 index.php:58 search.php:47 tag.php:50
 msgid "&larr; Previous"
 msgstr "&larr; Poprzednia"
 
-#: archive.php:57 category.php:42 index.php:59 page.php:37 search.php:32
+#: archive.php:57 category.php:42 index.php:59 page.php:37 search.php:48
 #: tag.php:51
 msgid "Next &rarr;"
 msgstr "Następna &rarr;"
@@ -689,15 +698,15 @@ msgstr "fa-envelope"
 msgid "&larr; Previos"
 msgstr "&larr; Poprzednia"
 
-#: search.php:20
+#: search.php:36
 msgid "Amount of Items Found: "
 msgstr "Ilość znalezionych elementów:"
 
-#: search.php:37
+#: search.php:53
 msgid "No Word Search: "
 msgstr "Brak wyszukiwania wyrazu:"
 
-#: search.php:38
+#: search.php:54
 msgid "Search Again: "
 msgstr "Poszukaj ponownie:"
 
@@ -721,11 +730,11 @@ msgstr "Strona Frontowa"
 msgid "No Portfolio Found"
 msgstr "Nie znaleziono żadnego Portfolio"
 
-#: template-front.php:142
+#: template-front.php:145
 msgid "Recent Posts"
 msgstr "Ostatnie Wpisy"
 
-#: template-front.php:148
+#: template-front.php:151
 msgid "Show All Posts"
 msgstr "Pokaż Wszystkie Wpisy"
 
@@ -868,6 +877,14 @@ msgstr ""
 "tutaj, zawartości tutaj\", co sprawia, że ​​wygląda jak czytelny angielski."
 "</p>"
 
+#: inc/polylang-translations.php:31
+msgid "Welcome To My Blog"
+msgstr "Witam Na Moim Blogu"
+
+#: inc/polylang-translations.php:32
+msgid "See My Latest Posts"
+msgstr "Zobacz Moje Najnowsze Wpisy"
+
 #. translators: %s: post date.
 #: inc/template-tags.php:29
 #, php-format
@@ -927,14 +944,14 @@ msgstr "Dodano:"
 msgid "Add Next Img"
 msgstr "Dodaj Następny Obrazek"
 
-#: template-parts/footer-parts/part-social.php:30
+#: template-parts/footer-parts/part-social.php:29
 msgid "Become A Friend"
 msgstr "Zostań Przyjacielem"
 
-#: template-parts/footer-parts/part-social.php:40
+#: template-parts/footer-parts/part-social.php:39
 msgid "Follow US"
 msgstr "Podążaj za Nami"
 
-#: template-parts/footer-parts/part-social.php:50
+#: template-parts/footer-parts/part-social.php:49
 msgid "Add Us To Your Circle"
 msgstr "Dodaj Nas Do Swojego Kręgu"

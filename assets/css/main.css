@@ -90,7 +90,7 @@ hr {
     position: absolute;
     top: 0;
     left: 60px;
-    background: #1a1a1a;
+    background: #001321b3;
     width: 200px;
     height: 100%}
 .menu h1.logo a {
@@ -112,7 +112,7 @@ hr {
 }
 .menu a {
     margin-left: 20px;
-    color: gray;
+    color: #ff7c02;
     display: block;
     font-size: 12px;
     font-weight: 700;

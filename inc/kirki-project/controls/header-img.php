@@ -48,5 +48,16 @@ Kirki::add_field( 'my_config', array(
 	'help'        => __( 'Simple Click :).', 'xtra-link' ),
 	'section'     => 'header_image',
 	'default'     => '',
-	'priority'    => 50,
+	'priority'    => 60,
+) );
+
+Kirki::add_field( 'my_config', array(
+	'type'        => 'image',
+	'settings'    => 'img_search',
+	'label'       => __( 'Add Search Image', 'xtra-link' ),
+	'description' => __( 'Change Search Image', 'xtra-link' ),
+	'help'        => __( 'Simple Click :).', 'xtra-link' ),
+	'section'     => 'header_image',
+	'default'     => '',
+	'priority'    => 70,
 ) );

@@ -1,6 +1,22 @@
 <?php get_header();
         global $wp_query;
         $total_results = $wp_query->found_posts; ?>
+
+<!-- MAIN IMAGE SECTION -->
+<div id="headerimg-page" class="parallax-search-page">
+<br />
+  <h1>
+    <a class="text-uppercase" href='<?php echo get_home_url() . '/' . date('Y'); ?>'>
+        <i class="fa fa-reply-all" aria-hidden="true"></i>
+        <?= __('Archive', 'xtra-link');?>
+    </a>
+      <span class="text-danger "> / <b><?php _e( 'Search', 'xtra-link' ) ?></b></span>
+  </h1>
+</div><!-- /#headerimg-page -->
+
+<br />
+
+
 <br>
 <!-- Page Content -->
 <div class="container">
