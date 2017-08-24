@@ -27,6 +27,10 @@
         $info_5 = get_theme_mod( 'info_5');
         $info_6 = get_theme_mod( 'info_6');
 
+// KIRKI BLOG HEADING index.php
+$txt_blog_1 = get_theme_mod( 'img_blog_txt');
+$txt_blog_2 = get_theme_mod( 'img_blog_txtarea');
+
 
 //TRANSLATE STRING WITH POLYLANG
 if (function_exists('pll_the_languages')) {
@@ -56,6 +60,9 @@ pll_register_string('info-1', $foot_map,  'Iframe Google Map');
     pll_register_string('info-5', $info_5,  'Info 5');
     pll_register_string('info-6', $info_6,  'Info 6');
 
+    // KIRKI BLOG HEADING index.php
+    pll_register_string('blog-1', $txt_blog_1,  'Heading Blog 1');
+    pll_register_string('blog-2', $txt_blog_2,  'Heading Blog 2');
 }
 
 

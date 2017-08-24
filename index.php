@@ -1,6 +1,12 @@
 <?php get_header();
-	$txt_blog_1 = get_theme_mod( 'img_blog_txt');
-	$txt_blog_2 = get_theme_mod( 'img_blog_txtarea');
+  //TRANSLATE STRING WITH POLYLANG
+  if (function_exists('pll_the_languages')) {
+        $txt_blog_1 = pll__(get_theme_mod( 'img_blog_txt'));
+        $txt_blog_2 = pll__(get_theme_mod( 'img_blog_txtarea'));
+  } else {
+    $txt_blog_1 = get_theme_mod( 'img_blog_txt');
+    $txt_blog_2 = get_theme_mod( 'img_blog_txtarea');
+  }
 ?>
 
 <div class="parallax-blog-page">
