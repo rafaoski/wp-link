@@ -85,7 +85,7 @@ get_header(); ?>
 
   <?php } else {
 
-	echo __('No Portfolio Found', 'xtra-link');
+	echo "<h3 class='alert alert-danger'>" . __('No Portfolio Found', 'xtra-link') . "</h3>";
 
 }
 // Restore original Post Data
@@ -95,6 +95,8 @@ wp_reset_postdata(); ?>
       </div><!-- row -->
     </div><!-- container -->
   </div><!-- portfolio -->
+
+<?php if ( $entries != '' ) { ?>
 
   <!-- SERVICES SECTION -->
   <div id="services">
@@ -132,6 +134,7 @@ $icon = $heading = $desc = '';
   </div><!-- container -->
 </div><!-- services section -->
 
+<?php } ?>
 
 <!-- BLOG POSTS -->
 <div class="container-fluid parallax-blog-page cont-recent-posts">

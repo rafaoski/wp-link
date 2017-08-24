@@ -6,8 +6,12 @@
 <?php  get_template_part('template-parts/footer-parts/part', 'social'); ?>
 <?php  get_template_part('template-parts/footer-parts/part', 'contact'); ?>
 
-		</div><!-- row -->
-	</div><!-- container -->
+        </div><!-- row -->
+
+        <a href='#' class='scrollup'><i class='fa fa-arrow-circle-o-up fa-3x' aria-hidden='true'></i></a>
+
+    </div><!-- container -->
+    
 </div><!-- Contact Footer -->
 
 <?php wp_footer();
@@ -17,6 +21,25 @@ $img_tag = get_theme_mod( 'img_tag', '' );
  // get_template_part( 'inc/old', 'footer-script'); ?>
 
 <script>
+
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
 
    $('.parallax-window').parallax({imageSrc: '<?php header_image(); ?>'})
 
@@ -60,6 +83,8 @@ new AnimOnScroll( document.getElementById( 'process' ), {
     maxDuration : 0.7,
     viewportFactor : 0.2
 } );
+
+
 
 </script>
 

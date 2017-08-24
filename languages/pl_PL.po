@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2017-08-24 11:52+0000\n"
+"POT-Creation-Date: 2017-08-24 15:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-08-24 11:52+0000\n"
+"PO-Revision-Date: 2017-08-24 15:05+0000\n"
 "Last-Translator: rafaoski <rafalolszewicz@gmail.com>\n"
 "Language-Team: Polish\n"
 "X-Generator: Loco - https://localise.biz/\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
 "&&(n%100<10||n%100 >= 20)? 1 : 2)"
 
-#: archive.php:8 index.php:21 tag.php:8
+#: archive.php:8 index.php:23 tag.php:8
 msgid "Blog"
 msgstr ""
 
-#: index.php:19 page.php:9 single-link_port.php:26 template-about.php:33
+#: index.php:21 page.php:9 single-link_port.php:26 template-about.php:33
 #: template-portfolio.php:36 template-services.php:26
 msgid "Home"
 msgstr ""
@@ -84,6 +84,39 @@ msgstr ""
 #: inc/polylang-translations.php:8
 msgid "Button Action"
 msgstr ""
+
+#: inc/polylang-translations.php:23
+#: inc/kirki-project/controls/footer-info.php:21
+msgid "Minsk - Head Office"
+msgstr ""
+
+#: inc/polylang-translations.php:24
+#: inc/kirki-project/controls/footer-info.php:30
+msgid "<p>Business Center, SomeAve 987,<br/>Minsk, Belarus.</p>"
+msgstr ""
+
+#: inc/polylang-translations.php:25
+#: inc/kirki-project/controls/footer-info.php:39
+msgid "+55 4839-4390"
+msgstr ""
+
+#: inc/polylang-translations.php:26
+#: inc/kirki-project/controls/footer-info.php:48
+msgid "+55 4333-4345"
+msgstr ""
+
+#: inc/polylang-translations.php:27
+#: inc/kirki-project/controls/footer-info.php:57
+msgid "hello@linkagency.com"
+msgstr ""
+
+#: inc/polylang-translations.php:31
+msgid "Welcome To My Blog"
+msgstr "Witam Na Moim Blogu"
+
+#: inc/polylang-translations.php:32
+msgid "See My Latest Posts"
+msgstr "Zobacz Moje Najnowsze Wpisy"
 
 #. translators: %s: post author.
 #: inc/template-tags.php:35
@@ -318,61 +351,31 @@ msgstr ""
 msgid "Menu Panel Options"
 msgstr ""
 
-#: template-parts/footer-parts/part-contact.php:39
-#: template-parts/footer-parts/part-contact.php:48
-#: inc/kirki-project/controls/footer-info.php:21
-msgid "Minsk - Head Office"
-msgstr ""
-
-#: template-parts/footer-parts/part-contact.php:40
 #: template-parts/footer-parts/part-contact.php:49
-#: inc/kirki-project/controls/footer-info.php:30
-msgid "<p>Business Center, SomeAve 987,<br/>Minsk, Belarus.</p>"
-msgstr ""
-
-#: template-parts/footer-parts/part-contact.php:41
-#: template-parts/footer-parts/part-contact.php:50
-#: inc/kirki-project/controls/footer-info.php:39
-msgid "+55 4839-4390"
-msgstr ""
-
-#: template-parts/footer-parts/part-contact.php:42
-#: template-parts/footer-parts/part-contact.php:51
-#: inc/kirki-project/controls/footer-info.php:48
-msgid "+55 4333-4345"
-msgstr ""
-
-#: template-parts/footer-parts/part-contact.php:43
-#: template-parts/footer-parts/part-contact.php:52
-#: inc/kirki-project/controls/footer-info.php:57
-msgid "hello@linkagency.com"
-msgstr ""
-
-#: template-parts/footer-parts/part-contact.php:59
 msgid "ADDRESS"
 msgstr ""
 
-#: template-parts/footer-parts/part-contact.php:66
+#: template-parts/footer-parts/part-contact.php:56
 msgid "P"
 msgstr ""
 
-#: template-parts/footer-parts/part-contact.php:67
+#: template-parts/footer-parts/part-contact.php:57
 msgid "F"
 msgstr ""
 
-#: template-parts/footer-parts/part-contact.php:68
+#: template-parts/footer-parts/part-contact.php:58
 msgid "E"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:28
+#: template-parts/footer-parts/part-social.php:24
 msgid "FACEBOOK"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:38
+#: template-parts/footer-parts/part-social.php:34
 msgid "TWITTER"
 msgstr ""
 
-#: template-parts/footer-parts/part-social.php:48
+#: template-parts/footer-parts/part-social.php:44
 msgid "GOOGLE +"
 msgstr ""
 
@@ -604,16 +607,16 @@ msgstr "Wybierz miesiąc"
 msgid "Select Year"
 msgstr "Wybierz rok"
 
-#: archive.php:56 category.php:41 index.php:56 search.php:31 tag.php:50
+#: archive.php:56 category.php:41 index.php:58 search.php:31 tag.php:50
 msgid "&larr; Previous"
 msgstr "&larr; Poprzednia"
 
-#: archive.php:57 category.php:42 index.php:57 page.php:37 search.php:32
+#: archive.php:57 category.php:42 index.php:59 page.php:37 search.php:32
 #: tag.php:51
 msgid "Next &rarr;"
 msgstr "Następna &rarr;"
 
-#: archive.php:62 category.php:47 index.php:62 tag.php:56
+#: archive.php:62 category.php:47 index.php:64 tag.php:56
 msgid "Sorry, no posts matched the criteria."
 msgstr "Niestety, żaden wpis nie spełnia kryteriów."
 
@@ -853,6 +856,18 @@ msgstr ""
 "najnowsze aktualizacje, powiadomienia o produktach i usługach io wiele "
 "więcej.</p>"
 
+#: inc/polylang-translations.php:28
+#: inc/kirki-project/controls/footer-info.php:66
+msgid ""
+"<p>The point of using Lorem Ipsum is that it has a more-or-less normal "
+"distribution of letters, as opposed to using 'Content here, content here', "
+"making it look like readable English.</p>"
+msgstr ""
+"<p>Punkt używania Lorem Ipsum polega na tym, że ma mniej lub bardziej "
+"normalną dystrybucję liter, w przeciwieństwie do korzystania z \"Treści "
+"tutaj, zawartości tutaj\", co sprawia, że ​​wygląda jak czytelny angielski."
+"</p>"
+
 #. translators: %s: post date.
 #: inc/template-tags.php:29
 #, php-format
@@ -912,27 +927,14 @@ msgstr "Dodano:"
 msgid "Add Next Img"
 msgstr "Dodaj Następny Obrazek"
 
-#: template-parts/footer-parts/part-contact.php:44
-#: template-parts/footer-parts/part-contact.php:53
-#: inc/kirki-project/controls/footer-info.php:66
-msgid ""
-"<p>The point of using Lorem Ipsum is that it has a more-or-less normal "
-"distribution of letters, as opposed to using 'Content here, content here', "
-"making it look like readable English.</p>"
-msgstr ""
-"<p>Punkt używania Lorem Ipsum polega na tym, że ma mniej lub bardziej "
-"normalną dystrybucję liter, w przeciwieństwie do korzystania z \"Treści "
-"tutaj, zawartości tutaj\", co sprawia, że ​​wygląda jak czytelny angielski."
-"</p>"
-
-#: template-parts/footer-parts/part-social.php:34
+#: template-parts/footer-parts/part-social.php:30
 msgid "Become A Friend"
 msgstr "Zostań Przyjacielem"
 
-#: template-parts/footer-parts/part-social.php:44
+#: template-parts/footer-parts/part-social.php:40
 msgid "Follow US"
 msgstr "Podążaj za Nami"
 
-#: template-parts/footer-parts/part-social.php:54
+#: template-parts/footer-parts/part-social.php:50
 msgid "Add Us To Your Circle"
 msgstr "Dodaj Nas Do Swojego Kręgu"

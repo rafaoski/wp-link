@@ -17,7 +17,7 @@
 			<div class="logo">
 				<?php the_custom_logo(); ?>
 			</div>
-
+			
 <form role="search" method="get" class="my-form" action="<?php echo home_url( '/' ); ?>">
 
     <input type="text" class="form-control"
@@ -72,5 +72,15 @@ $settings = get_theme_mod( 'rep_social', $defaults ); ?>
 
 </div>
 		<!-- Menu button -->
-		<div id="menuToggle"><i class="fa fa-bars"></i></div>
-	</nav>
+		<div id="menuToggle"><i class="fa fa-bars"></i>
+
+	</div>
+
+</nav>
+
+<?php // If Polylang Exsist
+if (function_exists('pll_the_languages')) { ?>
+	<div class='lang-switcher'>
+		<ul class='menu-icon'><?php pll_the_languages(array('show_flags'=>1,'show_names'=>1, 'current_lang'=>1)); ?></ul>
+	</div>
+<?php } ?>

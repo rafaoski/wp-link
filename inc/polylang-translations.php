@@ -28,8 +28,8 @@
 	$info_6 = get_theme_mod( 'info_6', __( '<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.</p>', 'xtra-link' ));
 
 // KIRKI BLOG HEADING index.php
-$txt_blog_1 = get_theme_mod( 'img_blog_txt');
-$txt_blog_2 = get_theme_mod( 'img_blog_txtarea');
+$txt_blog_1 = get_theme_mod( 'img_blog_txt', __('Welcome To My Blog','xtra-link'));
+$txt_blog_2 = get_theme_mod( 'img_blog_txtarea', __('See My Latest Posts','xtra-link'));
 
 
 //TRANSLATE STRING WITH POLYLANG

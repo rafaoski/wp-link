@@ -1,3 +1,58 @@
+.cont-page {
+  padding-top: 5em; 
+}
+.menu {
+  z-index: 999;
+}
+
+/* LANG SWITCHER */
+.lang-switcher {
+  /* display: flex;
+  justify-content: center; */
+  flex-wrap: wrap;
+  text-align: center;
+
+  /* left: 50%;
+  right: 50%; */
+
+  position: fixed;
+  margin-top:2rem;
+  padding: 1rem;
+  z-index: 1;
+}
+.lang-switcher .lang-item {
+  display: block;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+  border: 1px solid #00698a;
+  background-color: #4f625d1a;
+  width: 120px;
+  float: left;
+  margin: 2px;
+}
+.lang-switcher .lang-item:hover {
+  padding: 15px;
+  background-color: #091717e6;
+  border: 2px solid red;
+}
+
+.lang-switcher .menu-icon {
+  /* display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 100%; */
+}
+
+.lang-switcher .current-lang a {
+color: red;
+font-weight: bold;
+}
+
+.lang-item img {
+width: 25px;
+}
+
+
 li {
   list-style: none;
 }
@@ -291,52 +346,25 @@ font-size: 3em;
 -ms-transform: scale(0.9);
 transform: scale(0.9);
 }
-    /* Large Devices, Wide Screens */
-    /*@media only screen and (min-width : 992px) {
-      .parallax-page h1 {
-        padding-top: 1.7em;
-        font-size: 4em;
-       }
 
-       .parallax-single-portfolio h1 {
-          padding-top: 1em;
-          font-size: 3em;
-       }
-
-
-          }*/
-
-    /* Medium Devices, Desktops */
-    /*@media only screen and (max-width : 992px) {
-
-      .parallax-page, .parallax-archive-page h1 {
-        padding-top: 2.5em;
-        font-size: 3em;
-       }
-
-          }*/
-
-  /* Small Devices, Tablets */
-  /*@media only screen and (max-width : 768px) {
-
-    .parallax-page, .parallax-archive-page h1 {
-      padding-top: 3em;
-      font-size: 2.5em;
-     }
-
-     .parallax-single-portfolio h1 {
-      padding-top: 1.5em;
-      font-size: 2em;
-      text-align: center;
-
-   }
-
-   .parallax-post h1 {
-    padding-top: 1.7em;
-    font-size: 2em;
+/* SCROOL TO TOP */
+.scrollup {
+  bottom: 9em;
+  color: orange;
+  display: none;
+  /*padding: .5rem  .7rem;*/
+  position: fixed;
+  right: 2em;
+  transition: all .3s ease-in-out;
+  z-index: 1999;
+}
+.scrollup i {
+color: #ff3b00;
+transition: all .3s ease-in-out;
+}
+.scrollup i:hover {
+  color: #ffcb00;
   }
-
-        }*/
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {

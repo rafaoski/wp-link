@@ -1,17 +1,19 @@
 <?php get_header();
-  //TRANSLATE STRING WITH POLYLANG
+// Show Global Get Theme Mod from file inc/polylang-translations
+global $txt_blog_1, $txt_blog_2;
+
+//TRANSLATE STRING WITH POLYLANG
   if (function_exists('pll_the_languages')) {
-        $txt_blog_1 = pll__(get_theme_mod( 'img_blog_txt'));
-        $txt_blog_2 = pll__(get_theme_mod( 'img_blog_txtarea'));
-  } else {
-    $txt_blog_1 = get_theme_mod( 'img_blog_txt');
-    $txt_blog_2 = get_theme_mod( 'img_blog_txtarea');
+
+      $txt_blog_1 = pll__($txt_blog_1);
+      $txt_blog_2 = pll__($txt_blog_2);
+
   }
 ?>
 
 <div class="parallax-blog-page">
 
-  <div class="container">
+  <div class="container <?php if (function_exists('pll_the_languages')) { echo 'cont-page'; } ?>">
 
   <h1>
 		<a class="text-uppercase" href='<?php echo get_home_url(); ?>'>

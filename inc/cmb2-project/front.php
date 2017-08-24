@@ -46,7 +46,8 @@ function myFront() {
 
   // Id's for group's fields only need to be unique for the group. Prefix is not needed.
   $cmb->add_group_field( $group_field_id, array(
-  	'name' => 'Add icon',
+	'name' => __('Add Font Awesome icon'),
+	'description' => __('Paste Only fa-book'),
   	'id'   => $prefix . 'icon',
   	'type' => 'text',
   	// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
