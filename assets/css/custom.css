@@ -1,3 +1,8 @@
+/* SOME STYLE */
+li {
+  list-style: none;
+}
+
 .cont-page {
   padding-top: 5em; 
 }
@@ -36,13 +41,6 @@
   border: 2px solid red;
 }
 
-.lang-switcher .menu-icon {
-  /* display: flex;
-  flex-wrap: wrap;
-  float: left;
-  width: 100%; */
-}
-
 .lang-switcher .current-lang a {
 color: red;
 font-weight: bold;
@@ -52,11 +50,7 @@ font-weight: bold;
 width: 25px;
 }
 
-
-li {
-  list-style: none;
-}
-
+/* HEADER AREA */
 .logo {
   display: flex;
   justify-content: center;
@@ -92,6 +86,7 @@ iframe {
   height:400px;
 }
 
+/* FOOTER */
 .foot-cont {
 display: flex;
 justify-content: space-between;
@@ -366,6 +361,19 @@ transition: all .3s ease-in-out;
   color: #ffcb00;
   }
 
+/* SIDEBAR */
+.widget_search {
+  padding: 1rem;
+}
+.widget_search input {
+  background-color: #2b2626b3;
+  color: #fff;
+}
+.widget_search button {
+  background-color: #f000;
+  color: #f68302;
+  transition: all .3s ease-in-out;
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .parallax-page h1 {

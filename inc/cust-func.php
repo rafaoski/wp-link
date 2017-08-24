@@ -34,7 +34,7 @@ function custom_excerpt_length( $length ) {
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 function wpdocs_excerpt_more( $more ) {
-    return sprintf( '<p><a href="%1$s"><i class="fa fa-link"></i>%2$s</a></p>',
+    return sprintf( '<p><a href="%1$s"><i class="fa fa-link"></i> %2$s</a></p>',
         get_permalink( get_the_ID() ),
         __( 'Read More', 'xtra-link' )
     );

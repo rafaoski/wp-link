@@ -421,7 +421,17 @@ hr {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    transition: all .3s ease-in-out;
+    border: 1px solid aliceblue;
+    padding: .2em;
 }
+
+#sf i:hover {
+color: #d0fb15;
+border: 1px solid #01C7FF;
+border-radius: 10%;
+}
+
 #cf {
     background: #2f2f2f;
 }
