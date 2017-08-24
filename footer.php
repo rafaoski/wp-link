@@ -1,6 +1,7 @@
-
 <?php get_template_part('template-parts/footer-parts/part', 'logos'); ?>
+
 <?php get_template_part('template-parts/footer-parts/part', 'action'); ?>
+
 <?php  get_template_part('template-parts/footer-parts/part', 'connect'); ?>
 <?php  get_template_part('template-parts/footer-parts/part', 'social'); ?>
 <?php  get_template_part('template-parts/footer-parts/part', 'contact'); ?>

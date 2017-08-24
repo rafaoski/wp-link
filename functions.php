@@ -229,5 +229,10 @@ require get_template_directory() . '/inc/cmb2-project/services.php';
 /**
  * KIRKI CUSTOMIZER!
  */
- include_once( dirname( __FILE__ ) . '/inc/kirki/kirki.php' );
+include_once( dirname( __FILE__ ) . '/inc/kirki/kirki.php' );
 include_once( dirname( __FILE__ ) . '/inc/kirki-project/kirki-master.php' );
+
+/**
+ * POLYLANG TRANSLATIONS!
+ */
+ require get_template_directory() . '/inc/polylang-translations.php';

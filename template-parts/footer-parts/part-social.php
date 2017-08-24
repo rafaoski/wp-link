@@ -1,31 +1,21 @@
-<?php if ( true == get_theme_mod( 'on_of_4', true ) ) : ?>
+<?php // Theme_mod settings to check.
+ if ( true == get_theme_mod( 'on_of_4', true ) ) : 
 
-  <?php
-  // Default values for 'my_setting' theme mod.
-  $defaults_footer = array(
-    array(
-      'icon' => 'fa-facebook',
-      'link_text' => esc_attr__( 'FACEBOOK', 'xtra-link' ),
-      'link_url'  => 'https://www.facebook.com/',
-      'description' => esc_html__( 'Become A Friend', 'xtra-link' )
-    ),
-    array(
-      'icon' => 'fa-twitter',
-      'link_text' => esc_attr__( 'TWITTER', 'xtra-link' ),
-      'link_url'  => 'https://twitter.com',
-      'description' => esc_html__( 'Follow Us', 'xtra-link' )
-    ),
+  //TRANSLATE STRING WITH POLYLANG
+  if (function_exists('pll_the_languages')) {
 
-    array(
-      'icon' => 'fa-google-plus',
-      'link_text' => esc_attr__( 'GOOGLE +', 'xtra-link' ),
-      'link_url'  => 'https://plus.google.com',
-      'description' => esc_html__( 'Add Us To Your Circle', 'xtra-link' )
-    ),
-  );
+    $foot_social_1 = pll__(get_theme_mod( 'footer_social_1', 'https://www.facebook.com/'));
+    $foot_social_2 = pll__(get_theme_mod( 'footer_social_2', 'https://twitter.com'));
+    $foot_social_3 = pll__(get_theme_mod( 'footer_social_3', 'https://plus.google.com'));
 
-  // Theme_mod settings to check.
-  $foot_social = get_theme_mod( 'footer_social', $defaults_footer ); ?>
+  } else {
+ 
+    $foot_social_1 = get_theme_mod( 'footer_social_1', 'https://www.facebook.com/');
+    $foot_social_2 = get_theme_mod( 'footer_social_2', 'https://twitter.com');
+    $foot_social_3 = get_theme_mod( 'footer_social_3', 'https://plus.google.com');
+
+  }
+  ?>
 
 <!-- SOCIAL FOOTER -->
 <section id="contact"></section>
@@ -33,17 +23,37 @@
 	<div class="container">
 		<div class="row">
 
-  <?php foreach( $foot_social as $setting ) : ?>
+
 			<div class="col-lg-4 dg">
-				<h4 class="ml"><?= $setting['link_text']; ?></h4>
+				<h4 class="ml"><?= __('FACEBOOK', 'xtra-link')?></h4>
 				<p class="centered">
-          <a href="<?= $setting['link_url']; ?>" target="_new">
-            <i class="fa <?= $setting['icon']; ?>"></i>
+          <a href="<?=$foot_social_1?>" target="_blank">
+            <i class="fa fa-facebook ?>"></i>
           </a>
         </p>
-				<p class="ml">> <?= $setting['description']; ?></p>
+				<p class="ml">> <?= __('Become A Friend', 'xtra-link') ?></p>
 			</div>
-  <?php endforeach; ?>
+
+      <div class="col-lg-4 dg">
+				<h4 class="ml"><?= __('TWITTER', 'xtra-link')?></h4>
+				<p class="centered">
+          <a href="<?=$foot_social_2?>" target="_blank">
+            <i class="fa fa-twitter ?>"></i>
+          </a>
+        </p>
+				<p class="ml">> <?= __('Follow US', 'xtra-link') ?></p>
+			</div>
+
+      <div class="col-lg-4 dg">
+				<h4 class="ml"><?= __('GOOGLE +', 'xtra-link')?></h4>
+				<p class="centered">
+          <a href="<?=$foot_social_3?>" target="_blank">
+            <i class="fa fa-google-plus ?>"></i>
+          </a>
+        </p>
+				<p class="ml">> <?= __('Add Us To Your Circle', 'xtra-link') ?></p>
+			</div>
+
 
 		</div><!-- row -->
 	</div><!-- container -->
