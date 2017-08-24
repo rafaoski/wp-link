@@ -5,17 +5,14 @@
 <?php
 $class='foot-cont';
 if ( true == get_theme_mod( 'on_of_5', true ) ) :
+// Show Global Get Theme Mod from file inc/polylang-translations
+global $foot_map;
+
 $class='col-lg-4';
 
 //TRANSLATE STRING WITH POLYLANG
 if (function_exists('pll_the_languages')) {
-
-	$foot_map = pll__(get_theme_mod( 'my_fooot_map' ));	
-
-} else {
-
-	$foot_map = get_theme_mod( 'my_fooot_map' );
-
+	$foot_map = pll__($foot_map);	
 }
 
 if($foot_map != '') {
@@ -32,28 +29,21 @@ if($foot_map != '') {
 <?php endif; ?>
 
 <?php if ( true == get_theme_mod( 'on_of_6', true ) ) :
+// Show Global Get Theme Mod from file inc/polylang-translations
+global $info_1, $info_2, $info_3, $info_4, $info_5, $info_6;
 
 //TRANSLATE STRING WITH POLYLANG
 if (function_exists('pll_the_languages')) {
 
-  $info_1 = pll__(get_theme_mod( 'info_1', esc_attr__( 'Minsk - Head Office', 'xtra-link' )));
-  $info_2 = pll__(get_theme_mod( 'info_2', __( '<p>Business Center, SomeAve 987,<br/>Minsk, Belarus.</p>', 'xtra-link' )));
-  $info_3 = pll__(get_theme_mod( 'info_3', esc_attr__( '+55 4839-4390', 'xtra-link' )));
-  $info_4 = pll__(get_theme_mod( 'info_4', esc_attr__( '+55 4333-4345', 'xtra-link' )));
-  $info_5 = pll__(get_theme_mod( 'info_5', esc_attr__( 'hello@linkagency.com', 'xtra-link' )));
-  $info_6 = pll__(get_theme_mod( 'info_6', __( '<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.</p>', 'xtra-link' )));
+  $info_1 = pll__($info_1);
+  $info_2 = pll__($info_2);
+  $info_3 = pll__($info_3);
+  $info_4 = pll__($info_4);
+  $info_5 = pll__($info_5);
+  $info_6 = pll__($info_6);
 
-} else {
+} ?>
 
-	$info_1 = get_theme_mod( 'info_1', esc_attr__( 'Minsk - Head Office', 'xtra-link' ));
-	$info_2 = get_theme_mod( 'info_2', __( '<p>Business Center, SomeAve 987,<br/>Minsk, Belarus.</p>', 'xtra-link' ));
-	$info_3 = get_theme_mod( 'info_3', esc_attr__( '+55 4839-4390', 'xtra-link' ));
-	$info_4 = get_theme_mod( 'info_4', esc_attr__( '+55 4333-4345', 'xtra-link' ));
-	$info_5 = get_theme_mod( 'info_5', esc_attr__( 'hello@linkagency.com', 'xtra-link' ));
-	$info_6 = get_theme_mod( 'info_6', __( '<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.</p>', 'xtra-link' ));
-}
-
-  ?>
   <div class="<?= $class; ?>">
 
 				<h4><?php _e('ADDRESS', 'xtra-link');?><br/><?= $info_1; ?></h4>

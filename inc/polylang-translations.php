@@ -3,29 +3,29 @@
 // KIRKI CUSTOMIZER FRONT SECTION
 
 	// FOOTER template-parts/part-action.php
-		$call_1 = get_theme_mod( 'call_1');
-		$call_2 = get_theme_mod( 'call_2');
-	    $call_3 = get_theme_mod( 'call_3');
-        $call_4 = get_theme_mod( 'call_4');
+    $call_1 = get_theme_mod( 'call_1', esc_attr__( 'THIS IS A CALL TO ACTION AREA', 'xtra-link' ));
+    $call_2 = get_theme_mod( 'call_2', __( '<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>', 'xtra-link' ));
+    $call_3 = get_theme_mod( 'call_3', __('Button Action', 'xtra-link'));
+    $call_4 = get_theme_mod( 'call_4', 'https://xtra-strona.pl/');
 
     // FOOTER template-parts/part-action.php
-        $stay_1 = get_theme_mod( 'stay_1');
-        $stay_2 = get_theme_mod( 'stay_2'); 
+    $stay_1 = get_theme_mod( 'stay_1', esc_attr__( 'Stay Connected', 'xtra-link' ));
+	$stay_2 = get_theme_mod( 'stay_2', __( '<p>Join us on our social networks for all the latest updates, product/service announcements and more.</p>', 'xtra-link' ));
 
     // FOOTER template-parts/part-social.php
-        $foot_social_1 = get_theme_mod( 'footer_social_1');
-        $foot_social_2 = get_theme_mod( 'footer_social_2');
-        $foot_social_3 = get_theme_mod( 'footer_social_3');
+    $foot_social_1 = get_theme_mod( 'footer_social_1', 'https://www.facebook.com/');
+    $foot_social_2 = get_theme_mod( 'footer_social_2', 'https://twitter.com');
+    $foot_social_3 = get_theme_mod( 'footer_social_3', 'https://plus.google.com');
 
     // FOOTER template-parts/part-contact.php
     $foot_map = get_theme_mod( 'my_fooot_map' );
     
-        $info_1 = get_theme_mod( 'info_1');
-        $info_2 = get_theme_mod( 'info_2');
-        $info_3 = get_theme_mod( 'info_3');
-        $info_4 = get_theme_mod( 'info_4');
-        $info_5 = get_theme_mod( 'info_5');
-        $info_6 = get_theme_mod( 'info_6');
+	$info_1 = get_theme_mod( 'info_1', esc_attr__( 'Minsk - Head Office', 'xtra-link' ));
+	$info_2 = get_theme_mod( 'info_2', __( '<p>Business Center, SomeAve 987,<br/>Minsk, Belarus.</p>', 'xtra-link' ));
+	$info_3 = get_theme_mod( 'info_3', esc_attr__( '+55 4839-4390', 'xtra-link' ));
+	$info_4 = get_theme_mod( 'info_4', esc_attr__( '+55 4333-4345', 'xtra-link' ));
+	$info_5 = get_theme_mod( 'info_5', esc_attr__( 'hello@linkagency.com', 'xtra-link' ));
+	$info_6 = get_theme_mod( 'info_6', __( '<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.</p>', 'xtra-link' ));
 
 // KIRKI BLOG HEADING index.php
 $txt_blog_1 = get_theme_mod( 'img_blog_txt');

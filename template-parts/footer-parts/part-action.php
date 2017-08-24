@@ -1,25 +1,17 @@
 <?php if ( true == get_theme_mod( 'on_of_2', true ) ) :
-// global $call_1, $call_2, $call_2, $call_4;
 
-if ( true == get_theme_mod( 'on_of_2', true ) ) {
-
-//TRANSLATE STRING WITH POLYLANG
-	if (function_exists('pll_the_languages')) {
-
-						$call_1 = pll__(get_theme_mod( 'call_1', esc_attr__( 'THIS IS A CALL TO ACTION AREA', 'xtra-link' )));
-						$call_2 = pll__(get_theme_mod( 'call_2', __( '<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>', 'xtra-link' )));
-						$call_3 = pll__(get_theme_mod( 'call_3', __('Button Action', 'xtra-link')));
-						$call_4 = pll__(get_theme_mod( 'call_4', 'https://xtra-strona.pl/'));
-	} else {
-
-		$call_1 = get_theme_mod( 'call_1', esc_attr__( 'THIS IS A CALL TO ACTION AREA', 'xtra-link' ));
-		$call_2 = get_theme_mod( 'call_2', __( '<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>', 'xtra-link' ));
-		$call_3 = get_theme_mod( 'call_3', __('Button Action', 'xtra-link'));
-		$call_4 = get_theme_mod( 'call_4', 'https://xtra-strona.pl/');
-
-	}
-
-}
+// Show Global Get Theme Mod from file inc/polylang-translations
+ global $call_1, $call_2, $call_3, $call_4;
+	
+	//TRANSLATE STRING WITH POLYLANG
+		if (function_exists('pll_the_languages')) {
+	
+			        $call_1 = pll__($call_1);
+					$call_2 = pll__($call_2);
+					$call_3 = pll__($call_3);
+					$call_4 = pll__($call_4);
+		} 
+	
 ?>
 
 	<!-- CALL TO ACTION -->

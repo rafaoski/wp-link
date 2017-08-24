@@ -1,15 +1,12 @@
 <?php if ( true == get_theme_mod( 'on_of_3', true ) ) :
+// Show Global Get Theme Mod from file inc/polylang-translations
+   global $stay_1, $stay_2;
 
 //TRANSLATE STRING WITH POLYLANG
 if (function_exists('pll_the_languages')) {
-
-  $stay_1 = pll__(get_theme_mod( 'stay_1', esc_attr__( 'Stay Connected', 'xtra-link' )));
-	$stay_2 = pll__(get_theme_mod( 'stay_2', __( '<p>Join us on our social networks for all the latest updates, product/service announcements and more.</p>', 'xtra-link' )));
-
-} else {
-	$stay_1 = get_theme_mod( 'stay_1', esc_attr__( 'Stay Connected', 'xtra-link' ));
-	$stay_2 = get_theme_mod( 'stay_2', __( '<p>Join us on our social networks for all the latest updates, product/service announcements and more.</p>', 'xtra-link' ));
-}
+    $stay_1 = pll__($stay_1);
+	$stay_2 = pll__($stay_2);
+} 
 ?>
 	<div class="container">
 		<div class="row mt">

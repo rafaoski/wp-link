@@ -1,18 +1,14 @@
 <?php // Theme_mod settings to check.
  if ( true == get_theme_mod( 'on_of_4', true ) ) : 
+// Show Global Get Theme Mod from file inc/polylang-translations
+global $foot_social_1, $foot_social_2, $foot_social_3;
 
   //TRANSLATE STRING WITH POLYLANG
   if (function_exists('pll_the_languages')) {
 
-    $foot_social_1 = pll__(get_theme_mod( 'footer_social_1', 'https://www.facebook.com/'));
-    $foot_social_2 = pll__(get_theme_mod( 'footer_social_2', 'https://twitter.com'));
-    $foot_social_3 = pll__(get_theme_mod( 'footer_social_3', 'https://plus.google.com'));
-
-  } else {
- 
-    $foot_social_1 = get_theme_mod( 'footer_social_1', 'https://www.facebook.com/');
-    $foot_social_2 = get_theme_mod( 'footer_social_2', 'https://twitter.com');
-    $foot_social_3 = get_theme_mod( 'footer_social_3', 'https://plus.google.com');
+    $foot_social_1 = get_theme_mod($foot_social_1);
+    $foot_social_2 = get_theme_mod($foot_social_2);
+    $foot_social_3 = get_theme_mod($foot_social_3);
 
   }
   ?>
