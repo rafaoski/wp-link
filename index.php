@@ -9,6 +9,7 @@ global $txt_blog_1, $txt_blog_2;
       $txt_blog_2 = pll__($txt_blog_2);
 
   }
+ 
 ?>
 
 <div class="parallax-blog-page">

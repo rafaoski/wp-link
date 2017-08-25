@@ -16,35 +16,43 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 
 ?>
 
-	<!-- MAIN IMAGE SECTION -->
-	<div id="serviceswrap" class="parallax-services">
-		<div class="container">
-
-	<h1>
-    <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
-      <i class="fa fa-reply-all" aria-hidden="true"></i>
-      <?= __('Home', 'xtra-link');?>
-    </a>
+<!-- MAIN IMAGE SECTION -->
+<div id="serviceswrap" class="parallax-services">
+    <div class="container">
+        <h1>
+            <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+              <i class="fa fa-reply-all" aria-hidden="true"></i>
+              <?= __('Home', 'xtra-link');?>
+            </a>
 	     <span class="text-uppercase text-danger "> / <?php the_title();?></span>
-    </h1>
+        </h1>
+        
        <hr />
 
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 service-cont">
-					<h2 class='<?php echo get_the_content() ? 'marg-top' : '';?>'><?=$service_1;?><br/>
-						<?=$service_2;?>
-					</h2>
-					<?php the_content();?>
-				</div>
-			</div><!-- row -->
-		</div><!-- /container -->
-	</div><!-- /headerwrap -->
+        <div class="row">
+            
+            <div class="service-cont col-lg-8 col-lg-offset-2">
+                
+                <h2 class='<?php echo get_the_content() ? 'marg-top' : '';?>'><?=$service_1;?><br/>
+                        <?=$service_2;?>
+                </h2>
 
-	<!-- PROCESS SECTION -->
-    <div class="container">
-      <div class="cont-proc mt">
-		  	<h1><?=$service_3;?></h1>
-			  <hr>
+                <?php the_content();?>
+                
+            </div><!-- /.service-cont -->
+            
+        </div><!-- row -->
+        
+    </div><!-- /container -->
+</div><!-- /headerwrap -->
+
+<!-- PROCESS SECTION -->
+<div class="container">
+    <div class="cont-proc mt">
+        
+	<h1><?=$service_3;?></h1>
+        
+	    <hr>
 
 <ul class='process effect-2' id="process">
 
@@ -70,13 +78,13 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 		<div class='row'>
 
 			<div class='col-lg-8'>
-				<h3><b><?=$heading;?></b></h3>
-				<p><?=$content;?></p>
-				<br>
+                            <h3><b><?=$heading;?></b></h3>
+                                <p><?=$content;?></p>
+                                    <br>
 			</div>
 
 			<div class='col-lg-4'>
-				<img class="img-responsive"  src="<?=$img;?>" alt="">
+                            <img class="img-responsive"  src="<?=$img;?>" alt="">
 			</div>
 
 		</div>
@@ -86,15 +94,14 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 <?php } ?>
 
 </ul>
-
-</div><!-- cont-proc mt -->
-
+                          
+     </div><!-- cont-proc mt -->
 </div><!-- /.container -->
 
-	<!-- SERVICES SECTION -->
-	<div id="services">
-		<div class="container">
-			<div class="row mt">
+<!-- SERVICES SECTION -->
+<div id="services">
+    <div class="container">
+        <div class="row mt">
 <?php
 	foreach ( (array) $panel as $key => $entry ) {
 
@@ -111,18 +118,19 @@ $panel  = get_post_meta( get_the_ID(), '_services_6_add_panel', true );
 		if ( isset( $entry['_services_description'] ) ) {
 			$description  = esc_html( $entry['_services_description'] );
 	} ?>
-					<!-- Srvice 1 -->
-				<div class="col-lg-1 centered">
-					<i class="fa <?=$icon;?>"></i>
-				</div>
-				<div class="col-lg-3">
-					<h3><?=$heading;?></h3>
-					<p><?=$description;?></p>
-				</div>
+                    <!-- Srvice 1 -->
+                <div class="col-lg-1 centered">
+                        <i class="fa <?=$icon;?>"></i>
+                </div>
+                        
+                <div class="col-lg-3">
+                        <h3><?=$heading;?></h3>
+                        <p><?=$description;?></p>
+                </div>
 <?php } ?>
 
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- services section -->
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- services section -->
 <?php endwhile;
          get_footer(); ?>

@@ -15,44 +15,55 @@ global $foot_social_1, $foot_social_2, $foot_social_3;
 
 <!-- SOCIAL FOOTER -->
 <section id="contact">
-<div id="sf">
-	<div class="container">
-		<div class="row content-social">
+    <div id="sf">
+            <div class="container">
+                    <div class="row content-social">
 
-			<div class="col-lg-4 dg">
-				<h4 class="ml"><?= __('FACEBOOK', 'xtra-link')?></h4>
-				<p class="centered">
-          <a href="<?=$foot_social_1?>" target="_blank">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </p>
-				<p class="ml">> <?= __('Become A Friend', 'xtra-link') ?></p>
-			</div>
+                        <div class="col-lg-4 dg">
 
-      <div class="col-lg-4 dg">
-				<h4 class="ml"><?= __('TWITTER', 'xtra-link')?></h4>
-				<p class="centered">
-          <a href="<?=$foot_social_2?>" target="_blank">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </p>
-				<p class="ml">> <?= __('Follow US', 'xtra-link') ?></p>
-			</div>
+                            <h4 class="ml"><?= __('FACEBOOK', 'xtra-link')?></h4>
 
-      <div class="col-lg-4 dg">
-				<h4 class="ml"><?= __('GOOGLE +', 'xtra-link')?></h4>
-				<p class="centered">
-          <a href="<?=$foot_social_3?>" target="_blank">
-            <i class="fa fa-google-plus"></i>
-          </a>
-        </p>
-				<p class="ml">> <?= __('Add Us To Your Circle', 'xtra-link') ?></p>
-			</div>
+                                <p class="centered">
 
+                                    <a href="<?=$foot_social_1?>" target="_blank">
+                                      <i class="fa fa-facebook"></i>
+                                    </a>
 
-		</div><!-- row -->
-	</div><!-- container -->
-</div><!-- /#sf-->
+                                </p>
+
+                                     <p class="ml">> <?= __('Become A Friend', 'xtra-link') ?></p>
+                        </div>
+
+        <div class="col-lg-4 dg">
+
+            <h4 class="ml"><?= __('TWITTER', 'xtra-link')?></h4>
+
+                <p class="centered">
+
+                    <a href="<?=$foot_social_2?>" target="_blank">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+
+                </p>
+                       <p class="ml">> <?= __('Follow US', 'xtra-link') ?></p>
+        </div>
+
+            <div class="col-lg-4 dg">
+
+                <h4 class="ml"><?= __('GOOGLE +', 'xtra-link')?></h4>
+
+                <p class="centered">
+
+                    <a href="<?=$foot_social_3?>" target="_blank">
+                      <i class="fa fa-google-plus"></i>
+                    </a>
+                </p>
+                      <p class="ml">> <?= __('Add Us To Your Circle', 'xtra-link') ?></p>
+            </div>
+
+                    </div><!-- row -->
+            </div><!-- container -->
+    </div><!-- /#sf-->
 </section><!-- /#contact-->
 
 <?php endif; ?>

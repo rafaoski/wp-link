@@ -8,12 +8,16 @@ get_header(); ?>
 <div id="headerwrap" class="parallax-window">
   <div class="container">
     <div class="row">
+        
       <div class="col-lg-8 col-lg-offset-2">
+          
         <h1><?php bloginfo( 'name' ); ?></h1>
         <h2><?php bloginfo( 'description' ); ?></h2>
         <div class="spacer"></div>
         <a id='button' href='#welcome'><i class="fa fa-angle-down"></i></a>
+        
       </div>
+        
     </div><!-- row -->
   </div><!-- /container -->
 </div><!-- /headerwrap -->
@@ -39,7 +43,6 @@ get_header(); ?>
   </div><!-- /.container -->
 
   <?php
-
   // https://codex.wordpress.org/Pagination
   // https://codex.wordpress.org/Function_Reference/next_posts_link#Usage_when_querying_the_loop_with_WP_Query
   // https://codex.wordpress.org/Function_Reference/paginate_links
@@ -64,37 +67,37 @@ get_header(); ?>
   // The Query
   $query = new WP_Query( $args ); ?>
 
-  <!-- PORTFOLIO SECTION -->
-  <div id="portfolio">
+<!-- PORTFOLIO SECTION -->
+<div id="portfolio">
     <div class="container">
-      <div class="row mt">
-      <ul class="grid effect-2" id="grid">
-
+        <div class="row mt">
+            
+            <ul class="grid effect-2" id="grid">
 <?php   // The Loop
           if ( $query->have_posts() ) {
           	while ( $query->have_posts() ) {
           		$query->the_post(); ?>
 
         <li>
-          <a href="<?php the_permalink(); ?>" data-toggle="tooltip" data-html="true" title="<h2 class='text-primary'><?php the_title(); ?></h2>">
+          <a href="<?php the_permalink(); ?>" data-toggle="tooltip" data-html="true" title="<h4 class='text-primary'><?php the_title(); ?></h4>">
               <img src="<?php the_post_thumbnail_url(); ?>">
           </a>
         </li>
 
-<?php } ?>
+<?php } 
 
-  <?php } else {
-
-	echo "<h3 class='alert alert-danger'>" . __('No Portfolio Found', 'xtra-link') . "</h3>";
-
+        } else {
+            
+	   echo "<h3 class='alert alert-danger'>" . __('No Portfolio Found', 'xtra-link') . "</h3>";
+           
 }
 // Restore original Post Data
 wp_reset_postdata(); ?>
-
-      </ul>
-      </div><!-- row -->
+            </ul>
+          
+        </div><!-- row -->
     </div><!-- container -->
-  </div><!-- portfolio -->
+</div><!-- portfolio -->
 
 <?php if ( $entries != '' ) { ?>
 
@@ -120,13 +123,14 @@ $icon = $heading = $desc = '';
 	}
   ?>
 
-      <div class="col-lg-1 centered">
-        <i class="fa <?= $icon; ?>"></i>
-      </div>
-      <div class="col-lg-3">
-        <h3><?= $heading; ?></h3>
-        <?= $desc; ?>
-      </div>
+        <div class="col-lg-1 centered">
+          <i class="fa <?= $icon; ?>"></i>
+        </div>
+
+        <div class="col-lg-3">
+          <h3><?= $heading; ?></h3>
+          <?= $desc; ?>
+        </div>
 
 	<?php } ?>
 
@@ -137,7 +141,7 @@ $icon = $heading = $desc = '';
 <?php } ?>
 
 <!-- BLOG POSTS -->
-<div class="container-fluid parallax-blog-page cont-recent-posts">
+<div class="cont-recent-posts container-fluid parallax-blog-page">
 
   <div class="row mt">
 
@@ -190,8 +194,8 @@ if ( $query->have_posts() ) {
 wp_reset_postdata();
 ?>
 
-  </div><!-- row -->
-</div>
+    </div><!-- row -->
+</div><!-- /.cont-recent-posts -->
 
-<?php endwhile; ?>
-<?php get_footer(); ?>
+<?php endwhile;
+               get_footer(); ?>

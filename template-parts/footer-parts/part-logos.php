@@ -11,18 +11,19 @@
 <?php
 
  if($log_settings) :
-$i = 0;
-			foreach( $log_settings as $setting ) :
-$i++;
+    $i = 0;
+    foreach( $log_settings as $setting ) :
+    $i++;
+    
         $log_img = $setting['logos_img'];
         $img_log = esc_url(wp_get_attachment_url( $setting['logos_img'] ));
-        ?>
+?>
 
-			<div class="col-lg-2">
-				<a href="<?php echo $setting['link_url'] ? $setting['link_url'] : '#'; ?>">
-					<img class='img-responsive' src="<?php echo $img_log ? $img_log : $log_img; ?>" alt="<?= __('logo number-') . "$i"; ?>">
-				</a>
-      </div>
+<div class="col-lg-2">
+    <a href="<?php echo $setting['link_url'] ? $setting['link_url'] : '#'; ?>">
+        <img class='img-responsive' src="<?php echo $img_log ? $img_log : $log_img; ?>" alt="<?= __('logo number-') . "$i"; ?>">
+    </a>
+</div>
 
 <?php endforeach; ?>
 

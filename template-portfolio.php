@@ -27,7 +27,7 @@ $args = array(
 $query = new WP_Query( $args );
 ?>
 <!-- MAIN IMAGE SECTION -->
-<div class="parallax-portfolio" id="portwrap">
+<div id="portwrap" class="parallax-portfolio">
   <div class="container <?php if (function_exists('pll_the_languages')) { echo 'cont-page'; } ?>">
 
   <h1>
@@ -35,20 +35,27 @@ $query = new WP_Query( $args );
       <i class="fa fa-reply-all" aria-hidden="true"></i>
       <?= __('Home', 'xtra-link');?>
     </a>
-	     <span class="text-uppercase text-danger "> / <?php the_title();?></span>
+      
+	<span class="text-uppercase text-danger "> / <?php the_title();?></span>
+        
   </h1>
+      
   <hr />
 
-    <div class="row">
-       <?php while ( have_posts() ) : the_post(); ?>
-      <div class="col-lg-8 col-lg-offset-2 port-cont">
-          <h2 class='<?php echo get_the_content() ? 'marg-top' : '';?>'>
-            <?= $txt_p_1; ?>
-          </h2>
-            <?php the_content(); ?>
-        <?php endwhile; ?>
-      </div>
-    </div><!-- row -->
+        <div class="row">
+
+           <?php while ( have_posts() ) : the_post(); ?>
+          <div class="port-cont col-lg-8 col-lg-offset-2">
+
+              <h2 class='<?php echo get_the_content() ? 'marg-top' : '';?>'>
+                <?= $txt_p_1; ?>
+              </h2>
+                <?php the_content(); ?>
+            <?php endwhile; ?>  
+          </div><!-- /.port-cont -->
+
+        </div><!-- row -->
+    
   </div><!-- /container -->
 </div><!-- /portrwrap -->
 
@@ -57,48 +64,62 @@ $query = new WP_Query( $args );
 
     <div class="row mt">
 
-      <div class="<?php echo $href_2 ? 'col-lg-8' : 'col-lg-12';?>">
-        <h1><?= $txt_p_2; ?></h1>
-        <p><?= $txt_p_3; ?></p>
-      </div>
+        <div class="<?php echo $href_2 ? 'col-lg-8' : 'col-lg-12';?>">
+
+          <h1><?= $txt_p_2; ?></h1>
+          <p><?= $txt_p_3; ?></p>
+
+        </div>
 
 <?php if($href_2) : ?>
+        
       <div class="col-lg-4">
+          
         <p class="pull-right">
+            
           <br>
+          
             <a href='<?= $href_1; ?>' type="button" class="btn btn-green" target='_new'>
               <?= $href_2; ?>
             </a>
-          </p>
+          
+        </p>
+          
       </div>
+        
 <?php endif; ?>
+        
     </div><!-- /row -->
-  </div><!-- /.container -->
+</div><!-- /.container -->
 
-  <!-- PORTFOLIO SECTION -->
-  <div id="portfolio">
+<!-- PORTFOLIO SECTION -->
+<div id="portfolio">
     <div class="container">
-      <div class="row mt">
-      <ul class="grid effect-2" id="grid">
-          <?php   // The Loop
+        <div class="row mt">
+          
+            <ul class="grid effect-2" id="grid">
+                <?php  // The Loop
                     if ( $query->have_posts() ) {
                       while ( $query->have_posts() ) {
                         $query->the_post(); ?>
 
                   <li>
-                      <a href="<?php the_permalink(); ?>" data-toggle="tooltip" data-html="true" title="<h2 class='text-primary'><?php the_title(); ?></h2>">
+                      <a href="<?php the_permalink(); ?>" data-toggle="tooltip" data-html="true" title="<h4 class='text-primary'><?php the_title(); ?></h4>">
                           <img src="<?php the_post_thumbnail_url(); ?>">
                        </a>
                   </li>
 
-          <?php } ?>
-        </ul>
+                <?php } ?>
+              </ul>
 
-    <nav aria-label="Page navigation">
-      <ul class="pagination">
-          <?php  pag_link($query,$paged);?>
-      </ul>
-    </nav>
+                <nav aria-label="Page navigation">
+
+                    <ul class="pagination">
+                        <?php  pag_link($query,$paged);?>
+                    </ul>
+
+                </nav>
+          
           <?php } else {
 
         	echo __('No Post Found', 'xtra-link');
@@ -107,7 +128,7 @@ $query = new WP_Query( $args );
         // Restore original Post Data
         wp_reset_postdata(); ?>
 
-      </div><!-- row -->
+        </div><!-- row -->
     </div><!-- container -->
-  </div><!-- portfolio -->
+</div><!-- portfolio -->
 <?php get_footer(); ?>

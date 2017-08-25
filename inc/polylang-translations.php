@@ -66,5 +66,3 @@ pll_register_string('info-1', $foot_map,  'Iframe Google Map');
 }
 
 
-
-
