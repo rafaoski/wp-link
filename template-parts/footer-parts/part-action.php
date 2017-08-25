@@ -15,12 +15,10 @@
 
 <!-- CALL TO ACTION -->
 <div id="call">
-    <div class="container">
-        <div class="row">
+    <div class="container text-center">
 
             <h3><?= esc_html($call_1);?></h3>
 
-                <div class="col-lg-8 col-lg-offset-2">
 
                     <?= $call_2;?>
 
@@ -30,9 +28,6 @@
                         </a>
                     </p>
 
-                </div>
-            
-        </div><!-- row -->
     </div><!-- container -->
 </div><!-- Call to action -->
 

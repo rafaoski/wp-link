@@ -96,6 +96,23 @@ function xtra_link_setup() {
 		'flex-width'  => true,
 		'flex-height' => true,
 	) );
+        
+/**
+ * Set up the WordPress core custom header feature.
+ *
+ * @uses xtra_link_header_style()
+ */
+      	add_theme_support( 'custom-header', apply_filters( 'xtra_link_custom_header_args', array(
+		'default-image'          => '',
+		'default-text-color'     => '000000',
+		'width'                  => 1400,
+		'height'                 => 948,
+		'flex-height'            => true,
+		'flex-width'            => true,
+                'video' => true,
+	) ) );  
+        
+        
 }
 endif;
 add_action( 'after_setup_theme', 'xtra_link_setup' );
@@ -178,7 +195,7 @@ add_action( 'wp_enqueue_scripts', 'xtra_link_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.

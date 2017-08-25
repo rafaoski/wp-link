@@ -2,25 +2,60 @@
 /*
 Template Name: Front Page
 */
-get_header(); ?>
+get_header();
+
+// if add header video
+if(has_header_video()) {
+    
+// YOUTOBE VIDEO WITH JARALLAX.JS => https://github.com/nk-o/jarallax
+$h_vid = get_header_video_url();
+$vid_link = '';
+
+// CHECK IF WORD in VARIABLE $h_vid has mp4
+if (strpos($h_vid, 'mp4') !== false) {
+   
+$vid_link = "mp4:{$h_vid}";
+
+} else {
+// REMOVE SOME STRING    
+$vid = substr($h_vid,16);
+
+$vid_link = "https://www.youtube.com/watch?v={$vid}?";
+
+      }
+      
+ }?>
 
 <!-- MAIN IMAGE SECTION -->
-<div id="headerwrap" class="parallax-window">
+<?php  if(has_header_video()) {
+    echo "<div id='jarallax' class='jarallax' data-jarallax-video='$vid_link'>\n";
+} ?>
+<div id="headerwrap" class="<?=has_header_video() ? 'jar-back' : 'parallax-window';?>">
+    
   <div class="container">
     <div class="row">
         
       <div class="col-lg-8 col-lg-offset-2">
           
-        <h1><?php bloginfo( 'name' ); ?></h1>
+        <h1>
+          <a href='<?php echo esc_url( home_url( '/' ) ); ?>'>
+             <?php bloginfo( 'name' ); ?>
+          </a>
+        </h1>
+
         <h2><?php bloginfo( 'description' ); ?></h2>
+
         <div class="spacer"></div>
+        
         <a id='button' href='#welcome'><i class="fa fa-angle-down"></i></a>
         
       </div>
         
     </div><!-- row -->
   </div><!-- /container -->
+  
 </div><!-- /headerwrap -->
+<?=has_header_video() ? '</div><!-- /#jarallax -->' : '';?>
 
 <?php
   while ( have_posts() ) : the_post();

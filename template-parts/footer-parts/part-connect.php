@@ -9,16 +9,12 @@ if (function_exists('pll_the_languages')) {
 } 
 ?>
 
-<div class="container">
-    <div class="row mt">
-        <div class="col-lg-12">
-            
-            <h1><?= esc_html($stay_1); ?></h1>
-                 <?= $stay_2; ?>
-            <br>
-                
-        </div><!-- col-lg-12 -->
-    </div><!-- row -->
+<div id='connect' class="connect-content container mt text-center">
+
+    <h1 class='text-light'><?= esc_html($stay_1); ?></h1>
+         <?= $stay_2; ?>
+    <br>
+    
 </div><!-- container -->
 
 <?php endif; ?>

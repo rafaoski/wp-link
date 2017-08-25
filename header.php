@@ -81,6 +81,12 @@ $settings = get_theme_mod( 'rep_social', $defaults ); ?>
 <?php // If Polylang Exsist
 if (function_exists('pll_the_languages')) { ?>
 	<div class='lang-switcher'>
-		<ul class='menu-icon'><?php pll_the_languages(array('show_flags'=>1,'show_names'=>1, 'current_lang'=>1)); ?></ul>
+		<ul class='menu-icon'>
+                    <?php pll_the_languages(array(
+                        'show_flags'=>1,
+                        'show_names'=>1, 
+                        'current_lang'=>1
+                        )); ?>
+                </ul>
 	</div>
 <?php } ?>

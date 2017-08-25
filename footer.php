@@ -28,6 +28,9 @@ $img_search = get_theme_mod( 'img_search', '' );
 wp_footer();
  // get_template_part( 'inc/old', 'footer-script');?>
 
+	<script src="<?php bloginfo('template_url')?>/assets/js/jarallax.min.js"></script>
+	<script src="<?php bloginfo('template_url')?>/assets/js/jarallax-video.min.js"></script>
+        
 <script>
 
 $(document).ready(function () {

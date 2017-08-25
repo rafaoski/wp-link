@@ -16,35 +16,37 @@ global $txt_blog_1, $txt_blog_2;
 
   <div class="container <?php if (function_exists('pll_the_languages')) { echo 'cont-page'; } ?>">
 
-  <h1>
-		<a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
-			<i class="fa fa-reply-all" aria-hidden="true"></i>
-       <?= __('Home', 'xtra-link');?>
-	  </a>
-	     <span class="text-uppercase text-danger "> / <?= __('Blog', 'xtra-link'); ?></span>
-  </h1>
-  <hr />
+    <h1>
+            <a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
+                <i class="fa fa-reply-all" aria-hidden="true"></i>
+                    <?= __('Home', 'xtra-link');?>
+            </a>
+               <span class="text-uppercase text-danger "> / <?= __('Blog', 'xtra-link'); ?></span>
+    </h1>
 
-       <h1><?= $txt_blog_1; ?></h1>
-       <p><?= $txt_blog_2; ?></p>
+    <hr />
+
+         <h1><?= $txt_blog_1; ?></h1>
+         <p><?= $txt_blog_2; ?></p>
 
   </div><!-- /container -->
 
 <br>
+
 <!-- Page Content -->
 <div class="container">
 
     <div class="row">
 
-<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+    <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-        <?php else : ?>
+                <?php else : ?>
 
-          <div class="col-md-12">
+        <div class="col-md-12">
 
-<?php endif; ?>
+        <?php endif; ?>
 
           <!-- First Blog Post -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -64,14 +66,14 @@ global $txt_blog_1, $txt_blog_2;
 
             	<h3><?php _e( 'Sorry, no posts matched the criteria.','xtra-link' ); ?></h3>
 
-            <?php endif; ?>
+        <?php endif; ?>
 
         </div>
 
     <?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
         <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
-                 <?php get_sidebar(); ?>
+            <?php get_sidebar(); ?>
         </div>
     <?php } ?>
 
@@ -79,4 +81,5 @@ global $txt_blog_1, $txt_blog_2;
  </div><!-- /.container -->
 
  </div><!-- /.parallax-oth-pages -->
+
 <?php get_footer(); ?>

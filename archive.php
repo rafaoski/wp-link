@@ -3,9 +3,9 @@
 <!-- MAIN IMAGE SECTION -->
 <div id="headerimg-page" class="parallax-archive-page">
 <br />
-  <h1><a class="text-uppercase" href='<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>'>
+  <h1><a class="text-uppercase" href='<?php echo get_home_url(); ?>'>
     <i class="fa fa-reply-all" aria-hidden="true"></i>
-    <?= __('Blog', 'xtra-link');?>
+    <?= __('Home', 'xtra-link');?>
   </a>
       <span class="text-danger "> / <?php the_archive_title();?></span>
   </h1>
