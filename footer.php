@@ -24,15 +24,14 @@ $img_search = get_theme_mod( 'img_search', '' );
     </div><!-- container -->
 </div><!-- Contact Footer -->
 
+ <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/assets/css/styles.min.css">
+ 
 <?php 
 wp_footer();
  // get_template_part( 'inc/old', 'footer-script');?>
-
-	<script src="<?php bloginfo('template_url')?>/assets/js/jarallax.min.js"></script>
-	<script src="<?php bloginfo('template_url')?>/assets/js/jarallax-video.min.js"></script>
-        
+       
 <script>
-
+// SCROLL TOP
 $(document).ready(function () {
 
     $(window).scroll(function () {
@@ -52,6 +51,17 @@ $(document).ready(function () {
 
 });
 
+
+// Menu settings
+$('#menuToggle, .menu-close').on('click', function(){
+        $('#menuToggle').toggleClass('active');
+        $('body').toggleClass('body-push-toleft');
+        $('#theMenu').toggleClass('menu-open');
+});
+
+
+        
+// PARALLAX
    $('.parallax-window').parallax({imageSrc: '<?php header_image(); ?>'});
 
    $('.parallax-portfolio').parallax({imageSrc: '<?php the_post_thumbnail_url(); ?>'});
@@ -84,7 +94,7 @@ $(document).ready(function(){
     }, 500 );
 });
 
-<?php if (is_page_template( 'template-front.php' )) : ?>   
+<?php if (is_page_template( 'template-front.php' ) || is_page_template( 'template-portfolio.php' )) : ?>   
     new AnimOnScroll( document.getElementById( 'grid' ), {
            minDuration : 0.4,
            maxDuration : 0.7,
@@ -97,8 +107,7 @@ new AnimOnScroll( document.getElementById( 'process' ), {
         minDuration : 0.4,
         maxDuration : 0.7,
         viewportFactor : 0.2
-} );
-
+} );   
 </script>
 
 </body>

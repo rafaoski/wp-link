@@ -3,11 +3,37 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style media="screen">
+    #preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(14, 28, 25, 0.94);  
+    z-index:1999;
+    }
+      #status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px;
+  }
+</style>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        
+         <div id="status">&nbsp;</div>
+            
+    </div>
+    
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
