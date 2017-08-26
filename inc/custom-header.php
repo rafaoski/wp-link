@@ -17,15 +17,22 @@
  * @uses xtra_link_header_style()
  */
 function xtra_link_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'xtra_link_custom_header_args', array(
+    
+/**
+ * Set up the WordPress core custom header feature.
+ *
+ * @uses xtra_link_header_style()
+ */
+      	add_theme_support( 'custom-header', apply_filters( 'xtra_link_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1400,
 		'height'                 => 948,
 		'flex-height'            => true,
 		'flex-width'            => true,
-		'wp-head-callback'       => 'xtra_link_header_style',
-	) ) );
+                'video' => true,
+	) ) );  
+        
 }
 add_action( 'after_setup_theme', 'xtra_link_custom_header_setup' );
 

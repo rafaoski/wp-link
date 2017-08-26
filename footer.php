@@ -84,16 +84,19 @@ $(document).ready(function(){
     }, 500 );
 });
 
-new AnimOnScroll( document.getElementById( 'grid' ), {
-	minDuration : 0.4,
-	maxDuration : 0.7,
-	viewportFactor : 0.2
-} );
+<?php if (is_page_template( 'template-front.php' )) : ?>   
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+           minDuration : 0.4,
+           maxDuration : 0.7,
+           viewportFactor : 0.2
+    } );
+<?php endif; ?>
+
 
 new AnimOnScroll( document.getElementById( 'process' ), {
-    minDuration : 0.4,
-    maxDuration : 0.7,
-    viewportFactor : 0.2
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
 } );
 
 </script>

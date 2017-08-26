@@ -89,11 +89,11 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<h1><?= $heading_txt; ?></h1>
 				<ul class="process effect-2" id="process">
-          <?php
-          	foreach ( $files as $file ) {
-          		 echo "<li><img class='img-responsive center-block' src='$file'></li>";
-          	} 
-          ?>
+                            <?php
+                                  foreach ( $files as $file ) {
+                                           echo "<li><img class='img-responsive center-block' src='$file'></li>";
+                                  } 
+                            ?>
 				</ul>
 			</div><!-- col-lg-8 -->
 		</div><!-- row -->

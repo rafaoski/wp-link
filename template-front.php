@@ -20,7 +20,7 @@ $vid_link = "mp4:{$h_vid}";
 // REMOVE SOME STRING    
 $vid = substr($h_vid,16);
 
-$vid_link = "https://www.youtube.com/watch?v={$vid}?";
+$vid_link = "https://www.youtube.com/watch?v={$vid}";
 
       }
       
