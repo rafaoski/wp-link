@@ -17,8 +17,10 @@ function xtra_link_scripts() {
 
 wp_deregister_script( 'jquery' );
 
-//wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.js', array(), '1.0.0', true );
-//
+if (is_customize_preview()) {
+   wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.js', array(), '1.0.0', true );
+}
+
 //wp_enqueue_script( 'parallax-js', get_template_directory_uri() . '/assets/js/parallax.min.js', array('jquery'), '1.1.0', true );
 //wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.2.0', true );
 //wp_enqueue_script( 'masonry-js', get_template_directory_uri() . '/assets/js/masonry.pkgd.min.js', array('jquery'), '1.4.0', true );
@@ -41,3 +43,51 @@ wp_enqueue_script( 'compressed', get_template_directory_uri() . '/assets/js/comp
 	}
 }
 add_action( 'wp_enqueue_scripts', 'xtra_link_scripts' );
+
+//function add_async_attribute($tag, $handle) {
+//if ( 'compressed' !== $handle )
+//return $tag;
+//return str_replace( ' src', ' async src', $tag );
+//}
+//add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+//function add_async_attribute($tag, $handle) {
+//   // add script handles to the array below
+////   $scripts_to_async = array('compressed', 'another-handle');
+//   $scripts_to_async = array('compressed');
+//   
+//   foreach($scripts_to_async as $async_script) {
+//      if ($async_script === $handle) {
+//         return str_replace(' src', ' async="async" src', $tag);
+//      }
+//   }
+//   return $tag;
+//}
+//
+//add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+
+//function add_async_attribute($tag, $handle) {
+//   // add script handles to the array below
+//   $scripts_to_async = array(
+//       'juery', 
+//       'compressed', 
+//       'bootstrap-js',
+//       'masonry-js',
+//       'imagesloaded-js',
+//       'classie-js',
+//       'AnimOnScroll-js',
+//       'Jquery-Lazy-Load-js',
+//       'jarallax-js',
+//       'jarallax-video-js',
+//       'preloader'
+//       );
+//
+//   foreach($scripts_to_async as $async_script) {
+//      if ($async_script === $handle) {
+//         return str_replace(' src', ' async="async" src', $tag);
+//      }
+//   }
+//   return $tag;
+//}
+//
+//add_filter('script_loader_tag', 'add_async_attribute', 10, 2);

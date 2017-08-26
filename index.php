@@ -64,7 +64,7 @@ global $txt_blog_1, $txt_blog_2;
 
                    else : ?>
 
-            	<h3><?php _e( 'Sorry, no posts matched the criteria.','xtra-link' ); ?></h3>
+            	<h3 class='alert alert-danger'><?php _e( 'Sorry, no posts matched the criteria.','xtra-link' ); ?></h3>
 
         <?php endif; ?>
 
